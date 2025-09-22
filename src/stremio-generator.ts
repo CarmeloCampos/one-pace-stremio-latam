@@ -58,12 +58,20 @@ interface StremioStreams {
 export class StremioAddonGenerator {
   private readonly addonId = "one-pace-latam";
   private readonly outputDir: string;
+  private readonly usePosters: boolean;
 
-  constructor(outputDir: string = "./stremio-addon") {
+  constructor(
+    outputDir: string = "./stremio-addon",
+    usePosters: boolean = true
+  ) {
     this.outputDir = outputDir;
+    this.usePosters = usePosters;
   }
 
-  async generateAddon(dataPath: string, language: "es" | "en" = "es"): Promise<void> {
+  async generateAddon(
+    dataPath: string,
+    language: "es" | "en" = "es"
+  ): Promise<void> {
     console.log("🔧 Generando addon estático de Stremio...");
 
     // Crear directorio de salida
@@ -105,19 +113,20 @@ export class StremioAddonGenerator {
       id: this.addonId,
       version: "1.0.0",
       name: language === "es" ? "One Pace LATAM" : "One Pace LATAM (English)",
-      description: language === "es" 
-        ? "Addon estático para ver One Pace con subtítulos y doblaje en español"
-        : "Static addon to watch One Pace with Spanish subtitles and dubbing",
+      description:
+        language === "es"
+          ? "Addon estático para ver One Pace con subtítulos y doblaje en español"
+          : "Static addon to watch One Pace with Spanish subtitles and dubbing",
       resources: ["catalog", "meta", "stream"],
       types: ["series"],
       catalogs: [
         {
           type: "series",
           id: "one-pace-catalog",
-          name: language === "es" ? "One Pace Arcos" : "One Pace Arcs"
-        }
+          name: language === "es" ? "One Pace Arcos" : "One Pace Arcs",
+        },
       ],
-      idPrefixes: ["onepace_"]
+      idPrefixes: ["onepace_"],
     };
 
     await writeFile(
@@ -126,15 +135,20 @@ export class StremioAddonGenerator {
     );
   }
 
-  private async generateCatalog(data: OnePaceData, _language: "es" | "en"): Promise<StremioCatalogMeta[]> {
-    const catalogMetas: StremioCatalogMeta[] = data.seasons.map((season: Season, index: number) => ({
-      id: `onepace_${season.id}`,
-      type: "series",
-      name: season.title,
-      poster: this.getSeasonPoster(season.id),
-      genres: ["Animation", "Adventure", "Comedy"],
-      year: 2010 + index // Año aproximado basado en el orden
-    }));
+  private async generateCatalog(
+    data: OnePaceData,
+    _language: "es" | "en"
+  ): Promise<StremioCatalogMeta[]> {
+    const catalogMetas: StremioCatalogMeta[] = data.seasons.map(
+      (season: Season, index: number) => ({
+        id: `onepace_${season.id}`,
+        type: "series",
+        name: season.title,
+        ...(this.usePosters && { poster: this.getSeasonPoster(season.id) }),
+        genres: ["Animation", "Adventure", "Comedy"],
+        year: 2010 + index, // Año aproximado basado en el orden
+      })
+    );
 
     const catalog = { metas: catalogMetas };
 
@@ -147,8 +161,8 @@ export class StremioAddonGenerator {
   }
 
   private async generateMetadata(
-    data: OnePaceData, 
-    catalogMetas: StremioCatalogMeta[], 
+    data: OnePaceData,
+    catalogMetas: StremioCatalogMeta[],
     _language: "es" | "en"
   ): Promise<void> {
     for (let i = 0; i < data.seasons.length; i++) {
@@ -165,12 +179,13 @@ export class StremioAddonGenerator {
           id: catalogMeta.id,
           type: "series",
           name: season.title,
-          ...(catalogMeta.poster && { poster: catalogMeta.poster }),
+          ...(this.usePosters &&
+            catalogMeta.poster && { poster: catalogMeta.poster }),
           description: season.description,
           ...(catalogMeta.genres && { genres: catalogMeta.genres }),
           ...(catalogMeta.year && { year: catalogMeta.year }),
-          videos
-        }
+          videos,
+        },
       };
 
       await writeFile(
@@ -180,7 +195,10 @@ export class StremioAddonGenerator {
     }
   }
 
-  private generateVideosForSeason(season: Season, seasonNumber: number): Array<{
+  private generateVideosForSeason(
+    season: Season,
+    seasonNumber: number
+  ): Array<{
     id: string;
     title: string;
     season: number;
@@ -192,12 +210,17 @@ export class StremioAddonGenerator {
       season: number;
       episode: number;
     }> = [];
-    
+
     // Generar episodios basados en las calidades disponibles
-    const hasSubtitles = season.subtitle?.qualities && season.subtitle.qualities.length > 0;
+    const hasSubtitles =
+      season.subtitle?.qualities && season.subtitle.qualities.length > 0;
     const hasDub = season.dub?.qualities && season.dub.qualities.length > 0;
-    const hasExtendedSub = season.extended?.subtitle?.qualities && season.extended.subtitle.qualities.length > 0;
-    const hasExtendedDub = season.extended?.dub?.qualities && season.extended.dub.qualities.length > 0;
+    const hasExtendedSub =
+      season.extended?.subtitle?.qualities &&
+      season.extended.subtitle.qualities.length > 0;
+    const hasExtendedDub =
+      season.extended?.dub?.qualities &&
+      season.extended.dub.qualities.length > 0;
 
     let episodeCount = 0;
 
@@ -208,7 +231,7 @@ export class StremioAddonGenerator {
           id: `onepace_${season.id}_sub_${index + 1}`,
           title: `${season.title} - Episodio ${index + 1} (Sub)`,
           season: seasonNumber,
-          episode: index + 1
+          episode: index + 1,
         });
       });
       episodeCount = Math.max(episodeCount, uniqueEpisodes.length);
@@ -221,31 +244,35 @@ export class StremioAddonGenerator {
           id: `onepace_${season.id}_dub_${index + 1}`,
           title: `${season.title} - Episodio ${index + 1} (Dub)`,
           season: seasonNumber,
-          episode: index + 1 + episodeCount
+          episode: index + 1 + episodeCount,
         });
       });
     }
 
     if (hasExtendedSub && season.extended?.subtitle) {
-      const uniqueEpisodes = this.getUniqueEpisodes(season.extended.subtitle.qualities);
+      const uniqueEpisodes = this.getUniqueEpisodes(
+        season.extended.subtitle.qualities
+      );
       uniqueEpisodes.forEach((_, index) => {
         videos.push({
           id: `onepace_${season.id}_ext_sub_${index + 1}`,
           title: `${season.title} - Episodio ${index + 1} (Extended Sub)`,
           season: seasonNumber,
-          episode: index + 1 + episodeCount * 2
+          episode: index + 1 + episodeCount * 2,
         });
       });
     }
 
     if (hasExtendedDub && season.extended?.dub) {
-      const uniqueEpisodes = this.getUniqueEpisodes(season.extended.dub.qualities);
+      const uniqueEpisodes = this.getUniqueEpisodes(
+        season.extended.dub.qualities
+      );
       uniqueEpisodes.forEach((_, index) => {
         videos.push({
           id: `onepace_${season.id}_ext_dub_${index + 1}`,
           title: `${season.title} - Episodio ${index + 1} (Extended Dub)`,
           season: seasonNumber,
-          episode: index + 1 + episodeCount * 3
+          episode: index + 1 + episodeCount * 3,
         });
       });
     }
@@ -253,10 +280,12 @@ export class StremioAddonGenerator {
     return videos;
   }
 
-  private getUniqueEpisodes(qualities: Array<{ quality: string; url: string }>): string[] {
+  private getUniqueEpisodes(
+    qualities: Array<{ quality: string; url: string }>
+  ): string[] {
     const episodes = new Set<string>();
-    
-    qualities.forEach(quality => {
+
+    qualities.forEach((quality) => {
       // Extraer número de video de la calidad (ej: "Video 1", "Video 2")
       const match = quality.quality.match(/Video (\d+)/);
       if (match && match[1]) {
@@ -267,11 +296,18 @@ export class StremioAddonGenerator {
     return Array.from(episodes).sort((a, b) => parseInt(a) - parseInt(b));
   }
 
-  private async generateStreams(data: OnePaceData, _language: "es" | "en"): Promise<void> {
+  private async generateStreams(
+    data: OnePaceData,
+    _language: "es" | "en"
+  ): Promise<void> {
     for (const season of data.seasons) {
       // Generar streams para subtítulos
       if (season.subtitle?.qualities) {
-        await this.generateStreamsForType(season, "sub", season.subtitle.qualities);
+        await this.generateStreamsForType(
+          season,
+          "sub",
+          season.subtitle.qualities
+        );
       }
 
       // Generar streams para doblaje
@@ -281,25 +317,35 @@ export class StremioAddonGenerator {
 
       // Generar streams para extended - subtítulos
       if (season.extended?.subtitle?.qualities) {
-        await this.generateStreamsForType(season, "ext_sub", season.extended.subtitle.qualities);
+        await this.generateStreamsForType(
+          season,
+          "ext_sub",
+          season.extended.subtitle.qualities
+        );
       }
 
       // Generar streams para extended - doblaje
       if (season.extended?.dub?.qualities) {
-        await this.generateStreamsForType(season, "ext_dub", season.extended.dub.qualities);
+        await this.generateStreamsForType(
+          season,
+          "ext_dub",
+          season.extended.dub.qualities
+        );
       }
     }
   }
 
   private async generateStreamsForType(
-    season: Season, 
-    type: "sub" | "dub" | "ext" | "ext_sub" | "ext_dub", 
+    season: Season,
+    type: "sub" | "dub" | "ext" | "ext_sub" | "ext_dub",
     qualities: Array<{ quality: string; url: string }>
   ): Promise<void> {
-    const episodeGroups: { [episode: string]: Array<{ quality: string; url: string }> } = {};
+    const episodeGroups: {
+      [episode: string]: Array<{ quality: string; url: string }>;
+    } = {};
 
     // Agrupar por episodio
-    qualities.forEach(quality => {
+    qualities.forEach((quality) => {
       const match = quality.quality.match(/Video (\d+)/);
       if (match && match[1]) {
         const episode = match[1];
@@ -312,10 +358,10 @@ export class StremioAddonGenerator {
 
     // Generar archivo de streams para cada episodio
     for (const [episode, episodeQualities] of Object.entries(episodeGroups)) {
-      const streams: StremioStream[] = episodeQualities.map(quality => ({
+      const streams: StremioStream[] = episodeQualities.map((quality) => ({
         title: `${quality.quality} (${type.toUpperCase()})`,
         url: quality.url,
-        quality: this.extractQuality(quality.quality)
+        quality: this.extractQuality(quality.quality),
       }));
 
       const streamData: StremioStreams = { streams };
@@ -333,22 +379,9 @@ export class StremioAddonGenerator {
     return match?.[1] ?? "Unknown";
   }
 
-  private getSeasonPoster(seasonId: string): string {
-    // URLs de posters basadas en el ID de la temporada
-    const posters: { [key: string]: string } = {
-      "romance-dawn": "https://onepace.net/images/arcs/romance-dawn.jpg",
-      "orange-town": "https://onepace.net/images/arcs/orange-town.jpg",
-      "syrup-village": "https://onepace.net/images/arcs/syrup-village.jpg",
-      "baratie": "https://onepace.net/images/arcs/baratie.jpg",
-      "arlong-park": "https://onepace.net/images/arcs/arlong-park.jpg",
-      "loguetown": "https://onepace.net/images/arcs/loguetown.jpg",
-      "reverse-mountain": "https://onepace.net/images/arcs/reverse-mountain.jpg",
-      "whisky-peak": "https://onepace.net/images/arcs/whisky-peak.jpg",
-      "little-garden": "https://onepace.net/images/arcs/little-garden.jpg",
-      "drum-island": "https://onepace.net/images/arcs/drum-island.jpg",
-      "alabasta": "https://onepace.net/images/arcs/alabasta.jpg"
-    };
-
-    return posters[seasonId] || "https://onepace.net/images/logo.png";
+  private getSeasonPoster(_seasonId: string): string {
+    // Usar poster oficial de One Piece de TMDB que sabemos que funciona
+    // Todos los arcos usarán la misma imagen por ahora para evitar enlaces rotos
+    return "https://image.tmdb.org/t/p/w500/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg";
   }
 }
