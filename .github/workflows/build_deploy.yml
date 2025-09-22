@@ -28,10 +28,10 @@ jobs:
         run: bun install
 
       - name: Scraper
-        run: bun run src/scraper.ts
+        run: bun src/scraper.ts
 
       - name: Generate Stremio Addon
-        run: bun run generate-stremio.ts --lang es
+        run: bun generate-improved-stremio.ts
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3

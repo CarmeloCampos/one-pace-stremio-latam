@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "demo": "bun run index.ts",
-    "scraper": "bun run src/scraper.ts",
-    "generate-unified": "bun run generate-improved-stremio.ts"
+    "demo": "bun index.ts",
+    "scraper": "bun src/scraper.ts",
+    "generate-unified": "bun generate-improved-stremio.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
