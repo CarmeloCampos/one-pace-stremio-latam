@@ -32,19 +32,19 @@ bun run index.ts
 
 ```bash
 # Extraer datos en ambos idiomas
-bun run scraper.ts
+bun run src/scraper.ts
 ```
 
 El scraper:
 
 - Extrae datos de One Pace en español e inglés
 - Detecta automáticamente cambios y solo sobrescribe si es necesario
-- Genera archivos `one-pace-data-es.json` y `one-pace-data-en.json`
+- Genera archivos `data/one-pace-data-es.json` y `data/one-pace-data-en.json`
 
 ### 2. Usar la API
 
 ```typescript
-import { OnePaceAPI } from "./api";
+import { OnePaceAPI } from "./src/api";
 
 const api = new OnePaceAPI();
 
@@ -65,10 +65,10 @@ const results = api.searchSeasonsByTitle("arabasta", "es");
 const withDub = api.getSeasonsWithDub("es");
 ```
 
-### 3. Ejecutar pruebas
+### 3. Ejecutar demo
 
 ```bash
-bun run test.ts
+bun run index.ts
 ```
 
 ## 📊 Estructura de Datos
@@ -95,14 +95,16 @@ interface Season {
 
 ```
 one-pace-latam/
-├── scraper.ts          # Scraper principal con tipado completo
-├── api.ts              # API para consultar datos extraídos
-├── test.ts             # Pruebas y ejemplos de la API
 ├── index.ts            # Demo simple
 ├── src/
+│   ├── api.ts          # API para consultar datos extraídos
+│   ├── scraper.ts      # Scraper principal con tipado completo
 │   └── one-cheerio.ts  # Función base de scraping
-├── one-pace-data-es.json  # Datos en español
-├── one-pace-data-en.json  # Datos en inglés
+├── data/
+│   ├── one-pace-data-es.json  # Datos en español
+│   └── one-pace-data-en.json  # Datos en inglés
+├── package.json        # Dependencias del proyecto
+├── tsconfig.json       # Configuración de TypeScript
 └── README.md           # Esta documentación
 ```
 
@@ -140,8 +142,8 @@ El scraper utiliza hashes MD5 para detectar cambios en el contenido:
 
 ## 🌍 Soporte de Idiomas
 
-- 🇪🇸 **Español**: `one-pace-data-es.json`
-- 🇬🇧 **Inglés**: `one-pace-data-en.json`
+- 🇪🇸 **Español**: `data/one-pace-data-es.json`
+- 🇬🇧 **Inglés**: `data/one-pace-data-en.json`
 
 ### Diferencias por idioma:
 
@@ -164,16 +166,13 @@ Ciertas temporadas tienen versiones extendidas:
 bun run index.ts
 
 # Scraper completo
-bun run scraper.ts
-
-# Pruebas de API
-bun run test.ts
+bun run src/scraper.ts
 ```
 
 ## 📝 Ejemplo de Uso Completo
 
 ```typescript
-import { OnePaceAPI } from "./api";
+import { OnePaceAPI } from "./src/api";
 
 async function example() {
   const api = new OnePaceAPI();
