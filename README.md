@@ -376,16 +376,66 @@ Un episodio típico incluye múltiples streams:
 
 ## 🚀 Despliegue en Producción
 
-Para uso en producción, puedes desplegar en:
+### 🌐 GitHub Pages (Recomendado para Addon Estático)
 
-### Vercel
+#### Preparación
+
+```bash
+# Generar addon estático
+bun run generate-unified
+```
+
+#### Configuración
+
+1. Crea un nuevo repositorio en GitHub
+2. Sube la carpeta `stremio-addon` al repositorio
+3. Ve a Settings → Pages
+4. Selecciona "Deploy from a branch" → main → / (root)
+5. Tu addon estará disponible en: `https://tu-usuario.github.io/tu-repo/manifest.json`
+
+#### Estructura del repositorio:
+
+```
+tu-repo/
+├── manifest.json
+├── catalog/
+├── meta/
+├── stream/
+└── README.md
+```
+
+### ⚡ Vercel (Recomendado para Servidor Dinámico)
+
+#### Para Addon Estático
 
 ```bash
 npm i -g vercel
+cd stremio-addon
 vercel
 ```
 
-### Railway
+#### Para Servidor Dinámico
+
+```bash
+# Usar el servidor completo
+vercel
+```
+
+Tu addon estará disponible en: `https://tu-proyecto.vercel.app/manifest.json`
+
+### 🚀 Netlify
+
+#### Addon Estático
+
+1. Ve a [netlify.com](https://netlify.com) e inicia sesión
+2. Arrastra la carpeta `stremio-addon` a la zona de drop
+3. Tu addon estará disponible en: `https://random-name.netlify.app/manifest.json`
+
+#### Netlify Functions
+
+Configura como función serverless usando el servidor Bun.
+
+### ☁️ Railway
 
 ```bash
 railway login
@@ -393,13 +443,74 @@ railway init
 railway up
 ```
 
-### Netlify Functions
+### 🔗 Cloudflare Workers
 
-Configura como función serverless usando el servidor Bun.
+Usa el archivo `cloudflare-worker.js` incluido para deployment en Cloudflare.
 
-### Cloudflare Workers
+### 🔄 Actualización Automática con GitHub Actions
 
-Usa el archivo `cloudflare-worker.js` incluido.
+Configura actualización automática del addon:
+
+```yaml
+# .github/workflows/update-addon.yml
+name: Update Stremio Addon
+on:
+  schedule:
+    - cron: "0 6 * * *" # Diario a las 6 AM
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run src/scraper.ts
+      - run: bun run generate-unified
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto-update addon" || exit 0
+          git push
+```
+
+### 🎯 URLs Finales
+
+Tu addon quedará disponible en una URL como:
+
+- `https://tu-usuario.github.io/one-pace-stremio/manifest.json`
+- `https://one-pace-addon.vercel.app/manifest.json`
+- `https://one-pace-123456.netlify.app/manifest.json`
+
+### 📱 Instalar en Stremio
+
+1. **Copia la URL del manifest**: `https://tu-dominio.com/manifest.json`
+2. **Abre Stremio** en cualquier dispositivo
+3. **Ve a Addons** → "Install addon via URL"
+4. **Pega la URL** del manifest
+5. **¡Disfruta!** Ahora puedes ver One Pace desde Stremio
+
+### 🔧 Verificar que Funciona
+
+Antes de instalar en Stremio, puedes probar las URLs:
+
+- **Manifest**: `https://tu-dominio.com/manifest.json`
+- **Catálogo**: `https://tu-dominio.com/catalog/series/one-pace-complete.json`
+- **Meta**: `https://tu-dominio.com/meta/series/onepace_complete_series.json`
+- **Stream**: `https://tu-dominio.com/stream/series/onepace_s01e01.json`
+
+### 💡 Consejos para Hosting
+
+#### CORS (Cross-Origin Resource Sharing)
+
+Los servicios mencionados (GitHub Pages, Vercel, Netlify) configuran automáticamente CORS para servir JSON. No necesitas configuración adicional.
+
+#### Custom Domain
+
+En GitHub Pages puedes configurar un dominio personalizado en Settings → Pages → Custom domain.
 
 ## 🎯 Beneficios del Sistema Unificado
 
