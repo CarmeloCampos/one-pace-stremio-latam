@@ -119,7 +119,7 @@ export class ImprovedStremioAddonGenerator {
   private async generateUnifiedManifest(): Promise<void> {
     const manifest: StremioManifest = {
       id: this.addonId,
-      version: "2.1.0",
+      version: "2.2.0",
       name: "One Pace - Complete Series",
       description:
         "Complete One Pace series with all arcs as seasons. Includes Spanish and English subtitles/dubbing.",
@@ -358,6 +358,11 @@ export class ImprovedStremioAddonGenerator {
           this.addStreamsForEpisode(streams, enSeason, episodeVideoNum, "en");
         }
 
+        // Ordenar streams por prioridad: Español primero, luego English
+        // Dentro de cada idioma: Doblaje primero, luego subtítulos
+        // Dentro de cada tipo: 1080p primero, luego otras calidades
+        streams.sort((a, b) => this.compareStreamPriority(a, b));
+
         if (streams.length > 0) {
           const streamData: StremioStreams = { streams };
 
@@ -470,5 +475,53 @@ export class ImprovedStremioAddonGenerator {
   private extractQuality(qualityString: string): string {
     const match = qualityString.match(/(\d+p)/);
     return match?.[1] ?? "HD";
+  }
+
+  private compareStreamPriority(a: StremioStream, b: StremioStream): number {
+    // Prioridad de idioma: Español (es) primero, luego English (en)
+    const langPriorityA = a.language === "es" ? 0 : 1;
+    const langPriorityB = b.language === "es" ? 0 : 1;
+
+    if (langPriorityA !== langPriorityB) {
+      return langPriorityA - langPriorityB;
+    }
+
+    // Dentro del mismo idioma, prioridad por tipo: Doblaje primero, luego subtítulos
+    const getTypePriority = (title: string): number => {
+      if (title.includes("Doblaje") || title.includes("Dub")) return 0;
+      if (title.includes("Subtítulos") || title.includes("Sub")) return 1;
+      return 2; // Otros tipos
+    };
+
+    const typePriorityA = getTypePriority(a.title);
+    const typePriorityB = getTypePriority(b.title);
+
+    if (typePriorityA !== typePriorityB) {
+      return typePriorityA - typePriorityB;
+    }
+
+    // Dentro del mismo tipo, prioridad por calidad: 1080p primero
+    const getQualityPriority = (quality?: string): number => {
+      if (!quality) return 999;
+
+      if (quality.includes("1080p")) return 0;
+      if (quality.includes("720p")) return 1;
+      if (quality.includes("480p")) return 2;
+      if (quality.includes("360p")) return 3;
+
+      // Para calidades no reconocidas, extraer número y ordenar descendente
+      const match = quality.match(/(\d+)p/);
+      if (match && match[1]) {
+        const qualityNum = parseInt(match[1]);
+        return 1000 - qualityNum; // Mayor calidad = menor número de prioridad
+      }
+
+      return 999;
+    };
+
+    const qualityPriorityA = getQualityPriority(a.quality);
+    const qualityPriorityB = getQualityPriority(b.quality);
+
+    return qualityPriorityA - qualityPriorityB;
   }
 }
