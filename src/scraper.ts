@@ -2,6 +2,26 @@ import { oneCheerio } from "./one-cheerio";
 import * as fs from "fs";
 import * as crypto from "crypto";
 
+// Interfaces para Pixeldrain API
+interface PixeldrainFile {
+  id: string;
+  name: string;
+  size: number;
+  date_upload: string;
+  mime_type: string;
+}
+
+interface PixeldrainListResponse {
+  success: boolean;
+  id: string;
+  title: string;
+  file_count: number;
+  size: number;
+  date_created: string;
+  date_last_view: string;
+  files: PixeldrainFile[];
+}
+
 const textIndexOnePace = {
   es: {
     sub: "Subtitulos en español",
@@ -50,6 +70,68 @@ interface OnePaceData {
   };
 }
 
+// Funciones para manejar Pixeldrain
+function extractPixeldrainId(url: string): string | null {
+  // Admite tanto /u/ como /l/ para carpetas de Pixeldrain
+  const match = url.match(/pixeldrain\.net\/[ul]\/([a-zA-Z0-9]+)/);
+  return match?.[1] ?? null;
+}
+
+async function getPixeldrainFiles(folderId: string): Promise<string[]> {
+  try {
+    console.log(`🔍 Obteniendo archivos de carpeta Pixeldrain: ${folderId}`);
+
+    const response = await fetch(`https://pixeldrain.net/api/list/${folderId}`);
+
+    if (!response.ok) {
+      console.error(
+        `❌ Error al obtener lista de Pixeldrain: ${response.status}`
+      );
+      return [];
+    }
+
+    const data = (await response.json()) as PixeldrainListResponse;
+
+    if (!data.success || !data.files) {
+      console.error(`❌ Carpeta Pixeldrain no válida: ${folderId}`);
+      return [];
+    }
+
+    // Filtrar solo archivos de video
+    const videoFiles = data.files.filter(
+      (file) =>
+        file.mime_type.startsWith("video/") ||
+        file.name.match(/\.(mp4|mkv|avi|mov|wmv|flv|webm)$/i)
+    );
+
+    console.log(
+      `✅ Encontrados ${videoFiles.length} archivos de video en carpeta ${folderId}`
+    );
+
+    // Crear URLs de descarga directa
+    return videoFiles.map(
+      (file) => `https://pixeldrain.net/api/file/${file.id}`
+    );
+  } catch (error) {
+    console.error(
+      `❌ Error al procesar carpeta Pixeldrain ${folderId}:`,
+      error
+    );
+    return [];
+  }
+}
+
+async function processPixeldrainUrl(url: string): Promise<string[]> {
+  const folderId = extractPixeldrainId(url);
+
+  if (!folderId) {
+    console.warn(`⚠️ No se pudo extraer ID de Pixeldrain de: ${url}`);
+    return [url]; // Retornar URL original si no se puede procesar
+  }
+
+  return await getPixeldrainFiles(folderId);
+}
+
 // Función para extraer datos de un idioma específico
 async function extractOnePaceData(lang: "es" | "en"): Promise<OnePaceData> {
   console.log(`\n🌍 Extrayendo datos en ${lang.toUpperCase()}...`);
@@ -61,8 +143,9 @@ async function extractOnePaceData(lang: "es" | "en"): Promise<OnePaceData> {
 
   const seasons: Season[] = [];
 
-  // Iterar sobre los elementos encontrados
-  listItems.each((index: number, element: any) => {
+  // Iterar sobre los elementos encontrados usando for loop para permitir async
+  for (let index = 0; index < listItems.length; index++) {
+    const element = listItems[index];
     const $element = onePace(element);
 
     // Obtener ID y título
@@ -78,7 +161,7 @@ async function extractOnePaceData(lang: "es" | "en"): Promise<OnePaceData> {
 
     if (ulElements.length === 0) {
       console.log(`❌ ${title}: Not yet available in your language`);
-      return; // Continúa con el siguiente elemento
+      continue; // Continúa con el siguiente elemento
     }
 
     const seasonData: Season = {
@@ -88,14 +171,15 @@ async function extractOnePaceData(lang: "es" | "en"): Promise<OnePaceData> {
     };
 
     // Examinar cada UL
-    ulElements.each((_ulIndex: number, ulElement: any) => {
+    for (let ulIndex = 0; ulIndex < ulElements.length; ulIndex++) {
+      const ulElement = ulElements[ulIndex];
       const $ul = onePace(ulElement);
 
       // Buscar el span que indica si es subtítulo o doblaje
       // El span está antes del UL como hermano anterior
       const typeSpan = $ul.prevAll("span:first").find("span").text().trim();
 
-      if (!typeSpan) return; // Si no hay tipo, saltar
+      if (!typeSpan) continue; // Si no hay tipo, saltar
 
       // Determinar si es subtítulo o doblaje, y si es extended
       const isSubtitle =
@@ -110,15 +194,39 @@ async function extractOnePaceData(lang: "es" | "en"): Promise<OnePaceData> {
       const qualities: Quality[] = [];
 
       const liElements = $ul.find("li");
-      liElements.each((_liIndex: number, liElement: any) => {
+
+      // Procesar cada elemento li de forma asíncrona
+      for (let i = 0; i < liElements.length; i++) {
+        const liElement = liElements[i];
         const $li = onePace(liElement);
         const linkElement = $li.find("a");
+
         if (linkElement.length > 0) {
           const quality = linkElement.text().trim();
-          const url = linkElement.attr("href") || "";
-          qualities.push({ quality, url });
+          const originalUrl = linkElement.attr("href") || "";
+
+          // Si es una URL de Pixeldrain, procesarla para obtener los archivos
+          if (
+            originalUrl.includes("pixeldrain.net/u/") ||
+            originalUrl.includes("pixeldrain.net/l/")
+          ) {
+            console.log(`🎬 Procesando carpeta Pixeldrain para ${quality}...`);
+            const videoUrls = await processPixeldrainUrl(originalUrl);
+
+            // Agregar cada video encontrado con su calidad
+            videoUrls.forEach((videoUrl, index) => {
+              const qualityLabel =
+                videoUrls.length > 1
+                  ? `${quality} - Video ${index + 1}`
+                  : quality;
+              qualities.push({ quality: qualityLabel, url: videoUrl });
+            });
+          } else {
+            // Si no es Pixeldrain, usar la URL original
+            qualities.push({ quality, url: originalUrl });
+          }
         }
-      });
+      }
 
       // Asignar al objeto según el tipo
       if (isExtended) {
@@ -135,10 +243,10 @@ async function extractOnePaceData(lang: "es" | "en"): Promise<OnePaceData> {
           seasonData.dub = { qualities };
         }
       }
-    });
+    }
 
     seasons.push(seasonData);
-  });
+  }
 
   return {
     textIndex: textIndexOnePace,

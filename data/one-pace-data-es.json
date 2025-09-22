@@ -1,0 +1,4432 @@
+{
+  "textIndex": {
+    "es": {
+      "sub": "Subtitulos en español",
+      "dub": "Doblaje en español"
+    },
+    "en": {
+      "sub": "English Subtitles",
+      "dub": "English Dub"
+    }
+  },
+  "seasons": [
+    {
+      "id": "romance-dawn",
+      "title": "Romance Dawn",
+      "description": "Monkey D. Luffy parte en su aventura para formar su tripulación, encontrar el legendario One Piece, y así, ser el Rey de los Piratas.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/P7NGVH69"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/7j9SC6QK"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/mp5U4jT9"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/QLrcn8jz"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/Nuoa1Epd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/26QXhicp"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/aJ374Zto"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/CeKLpX7U"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/jjAv2tAf"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/nKpBLzxx"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/fEvZumz8"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/4gNkbrnH"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/Ap7G4Y2u"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/zNMn2ZJ9"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/QV4Xg6QY"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/aGaX6qjr"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/sdqVFuzz"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/YB4x3BMt"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/YahY64k5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/3Cbe5vk6"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/ytYtnpGd"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/dgLF9dYq"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/kWQWFWsj"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/K3FLLxgj"
+          }
+        ]
+      }
+    },
+    {
+      "id": "orange-town",
+      "title": "Ciudad Orange",
+      "description": "Luffy y Zoro se enfrentan a una colorida tripulación pirata liderada por el capitán Buggy, el Payaso. Se les une una muchacha llamada Nami, quien les ayuda a navegar en este predicamento.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/77tAqAxC"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/HEkPak2k"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/bAhXz2ot"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/eBSYAX6R"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/TxV9ckjq"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/PBnKzs8r"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/8tw3DkrF"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/edi3JS9f"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ZC2MHG5y"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/Fk3cq4HC"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/yXfJAagc"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/yKQtT9yR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/eZLnBEN2"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/EQbNV4hT"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ABtSxyGS"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/eJmeEvXW"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/ixchoHc8"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ZraaZFz1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "syrup-village",
+      "title": "Villa Syrup",
+      "description": "La novata tripulación pirata de Luffy llega a las laderas de la Villa Syrup. Allí se encuentran con un mentiroso y una conspiración para robar la fortuna de una jovencita.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/yTabViKs"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/1R1zNDer"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/wjYz9XPZ"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/uyKrntNk"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/rtJr4ixM"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/1TFXQMQ2"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/wWdeYDG7"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/sutopyLB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/EQa9bR1w"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/EFC5s4v6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/AVi9Mt7H"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/TsAL4Jzm"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/ReYUMYd7"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/KhojWghP"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/uaVTDRUJ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/GiYy1jUb"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/g9TEVMxy"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/r85m8U8e"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/zz7LE5D3"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/2RB1bknv"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/CyFC4kwt"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/LEMRmbmb"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/DMqF7tYj"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/g6Hesti6"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/BMnL2TU7"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/PbwFGdCk"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/jV1EWdTm"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/qU6ZyJwQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/QbWnHBgC"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/FjsywnVe"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/9wgqMxMB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/9tjBmVbn"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/LYr19j18"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/3wLaYo5z"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/H6sACoi5"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/QvaZqMgQ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/75Q4dLzh"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/uKsfgJFf"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/bWWfvVXL"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/e5PfDHDH"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/NYYwNddB"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/NDWuKpEP"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gaimon",
+      "title": "Gaimon",
+      "description": "Con Usopp ahora en la tripulación y un nuevo barco, el Going Merry, a su disposición, los Sombrero de Paja avanzan a la siguiente isla que dicen que tiene un fabuloso tesoro. Allí se encontrarán a un extraño sujeto atascado en una caja, que ha estado buscando el mismo tesoro.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/P9hEZGXf"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/3ymej6g3"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/EEnUoGXB"
+          }
+        ]
+      }
+    },
+    {
+      "id": "baratie",
+      "title": "Baratie",
+      "description": "Los Sombrero de Paja parten hacia el restaurante marítimo, Baratie, con la esperanza de reclutar a uno de sus cocineros. Mientras, una hambrienta, pero poderosa fuerza asedia al restaurante cuando un amenazante espadachín del Grand Line se aproxima.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/2BQZz6nd"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/hvYmp5iu"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/QHL7NAsB"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/mWohi52e"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/LnEx7Muf"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/XRiUrd2c"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/xfLudNqa"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ps6zqm7h"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/QkVUEfy9"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/aa5Z3gLR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/85gxZSph"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/rAHT5aqe"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/twK2U1da"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/scAJuRpR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/Y4eeVcMn"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/etfcBRL1"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/KDXoSadu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/W1SXZzz1"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/z3WMtHeP"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/mCTNokKT"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/S5m56e9j"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/XRiUrd2c"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/mw2aFycs"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ps6zqm7h"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/E7B85w2o"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/W1SXZzz1"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/z3WMtHeP"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/mCTNokKT"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/S5m56e9j"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/XRiUrd2c"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/mw2aFycs"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ps6zqm7h"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arlong-park",
+      "title": "Arlong Park",
+      "description": "La ciudad natal de Nami ha sido controlada desde hace tiempo por Arlong y su banda de Gyojin (hombres-pez) provenientes del Grand Line. Cuando los Sombrero de Paja llegan, se encuentran que su futura navegante ha dejado atrás unos cuantos detalles clave de sí misma.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/5KGscRZZ"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/xX7DdamG"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/71rShm1Y"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/ZddGSRFE"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/p44mnu4d"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ozYbJviF"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 9",
+            "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 10",
+            "url": "https://pixeldrain.net/api/file/JheSAhvr"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/PzBbENn4"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/cuGorB3X"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/6kSmTdiQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/UEV2jCCk"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/f1hiF6y5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ozYbJviF"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/JheSAhvr"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/UAVbYWYc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/mM3Wh1Y1"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/T7V7r4ox"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/G5BhxYfj"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/cm7fm7H4"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ozYbJviF"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 9",
+            "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 10",
+            "url": "https://pixeldrain.net/api/file/JheSAhvr"
+          }
+        ]
+      },
+      "extended": {
+        "subtitle": {
+          "qualities": [
+            {
+              "quality": "Pixeldrain: 480p - Video 1",
+              "url": "https://pixeldrain.net/api/file/5KGscRZZ"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 2",
+              "url": "https://pixeldrain.net/api/file/xX7DdamG"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 3",
+              "url": "https://pixeldrain.net/api/file/71rShm1Y"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 4",
+              "url": "https://pixeldrain.net/api/file/ZddGSRFE"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 5",
+              "url": "https://pixeldrain.net/api/file/jqRYnMRw"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 6",
+              "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 7",
+              "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 8",
+              "url": "https://pixeldrain.net/api/file/ozYbJviF"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 9",
+              "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 10",
+              "url": "https://pixeldrain.net/api/file/JheSAhvr"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 1",
+              "url": "https://pixeldrain.net/api/file/PzBbENn4"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 2",
+              "url": "https://pixeldrain.net/api/file/cuGorB3X"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 3",
+              "url": "https://pixeldrain.net/api/file/6kSmTdiQ"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 4",
+              "url": "https://pixeldrain.net/api/file/UEV2jCCk"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 5",
+              "url": "https://pixeldrain.net/api/file/vkL1NhNm"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 6",
+              "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 7",
+              "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 8",
+              "url": "https://pixeldrain.net/api/file/ozYbJviF"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 9",
+              "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 10",
+              "url": "https://pixeldrain.net/api/file/JheSAhvr"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 1",
+              "url": "https://pixeldrain.net/api/file/UAVbYWYc"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 2",
+              "url": "https://pixeldrain.net/api/file/mM3Wh1Y1"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 3",
+              "url": "https://pixeldrain.net/api/file/T7V7r4ox"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 4",
+              "url": "https://pixeldrain.net/api/file/G5BhxYfj"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 5",
+              "url": "https://pixeldrain.net/api/file/nwokEKCw"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 6",
+              "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 7",
+              "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 8",
+              "url": "https://pixeldrain.net/api/file/ozYbJviF"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 9",
+              "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 10",
+              "url": "https://pixeldrain.net/api/file/JheSAhvr"
+            }
+          ]
+        },
+        "dub": {
+          "qualities": [
+            {
+              "quality": "Pixeldrain: 480p - Video 1",
+              "url": "https://pixeldrain.net/api/file/fCx5JuDx"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 2",
+              "url": "https://pixeldrain.net/api/file/EQ8J2ZFP"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 3",
+              "url": "https://pixeldrain.net/api/file/7GbchHrj"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 4",
+              "url": "https://pixeldrain.net/api/file/ZUZrMGk7"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 5",
+              "url": "https://pixeldrain.net/api/file/95Q18BYk"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 6",
+              "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 7",
+              "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 8",
+              "url": "https://pixeldrain.net/api/file/ozYbJviF"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 9",
+              "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 10",
+              "url": "https://pixeldrain.net/api/file/JheSAhvr"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 1",
+              "url": "https://pixeldrain.net/api/file/4mv6xJmv"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 2",
+              "url": "https://pixeldrain.net/api/file/QVcominY"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 3",
+              "url": "https://pixeldrain.net/api/file/mhiCGtAX"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 4",
+              "url": "https://pixeldrain.net/api/file/UUf1Y7XQ"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 5",
+              "url": "https://pixeldrain.net/api/file/m8oExfur"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 6",
+              "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 7",
+              "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 8",
+              "url": "https://pixeldrain.net/api/file/ozYbJviF"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 9",
+              "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 10",
+              "url": "https://pixeldrain.net/api/file/JheSAhvr"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 1",
+              "url": "https://pixeldrain.net/api/file/ooSvf1DW"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 2",
+              "url": "https://pixeldrain.net/api/file/iKvLbetR"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 3",
+              "url": "https://pixeldrain.net/api/file/p9iiRRrF"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 4",
+              "url": "https://pixeldrain.net/api/file/QmWTjJVR"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 5",
+              "url": "https://pixeldrain.net/api/file/Hx8tpu86"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 6",
+              "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 7",
+              "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 8",
+              "url": "https://pixeldrain.net/api/file/ozYbJviF"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 9",
+              "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 10",
+              "url": "https://pixeldrain.net/api/file/JheSAhvr"
+            }
+          ]
+        }
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/fCx5JuDx"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/EQ8J2ZFP"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/7GbchHrj"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/ZUZrMGk7"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/zNtmaXdu"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ozYbJviF"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 9",
+            "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 10",
+            "url": "https://pixeldrain.net/api/file/JheSAhvr"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/4mv6xJmv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/QVcominY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/mhiCGtAX"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/UUf1Y7XQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/MD6Ad6Wh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ozYbJviF"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/JheSAhvr"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/ooSvf1DW"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/iKvLbetR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/p9iiRRrF"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/QmWTjJVR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/s6tLRtw7"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/WS5K9Gtv"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/yTwaHxkc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ozYbJviF"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 9",
+            "url": "https://pixeldrain.net/api/file/fnd2tdQz"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 10",
+            "url": "https://pixeldrain.net/api/file/JheSAhvr"
+          }
+        ]
+      }
+    },
+    {
+      "id": "the-adventures-of-buggys-crew",
+      "title": "Las aventuras de los Piratas de Buggy",
+      "description": "Buggy, luego de ser derrotado por Luffy, Zoro y Nami, empieza su contienda por recuperar sus partes del cuerpo y su tripulación, para poder tener su vistoza venganza contra Luffy.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/chMGGDVa"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/3hhKyv85"
+          }
+        ]
+      }
+    },
+    {
+      "id": "loguetown",
+      "title": "Loguetown",
+      "description": "La última isla antes de entrar al Grand Line: Loguetown. Luffy y su tripulación tiran anclas para abastecerse, turistear, y rendir honores al lugar donde Gold Roger dejó su último aliento.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/BrcY1a4g"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/sc6EQ3Ak"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/jd2BuymH"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reverse-mountain",
+      "title": "Reverse Mountain",
+      "description": "La Reverse Mountain es la entrada al Grand Line. Lo que le espera a los Sombrero de Paja son corrientes de agua imposibles, una ballena gigante, y dudosa gente con nombres clave.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/XmjJwgKM"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/nJYmptDf"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/hM9m6StG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/1vAYyMjy"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/ZQuVVD66"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/fncg8XXD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whisky-peak",
+      "title": "Whisky Peak",
+      "description": "La primera isla en el Grand Line es sorprendentemente acogedora para piratas. Pero cuando la noche cae, un complot mortal se desmaraña.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/gXSEcqBp"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/1xMoCjWS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "the-trials-of-koby-meppo",
+      "title": "El diario de la lucha de Koby-Meppo",
+      "description": "Koby y Helmeppo son nuevos en la Marina, pero pronto estarán envueltos en el intento de escape de Morgan. ¿Su valentía podría ganar el respeto de sus superiores -Así como del vicealmirante Garp- o los llevará a su perdición?",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/FjFF9pwb"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/LZGBN3RX"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/xfn97CfZ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "little-garden",
+      "title": "Little Garden",
+      "description": "Los Sombrero de Paja juran llevar a la princesa Vivi a Arabasta y su viaje los lleva a Little Garden, una isla prehistórica que alberga a criaturas y personas gigantescas.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/PmMiJYy4"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/AMnN11uv"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/crTMR93r"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/xfYRnWPy"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/ntXMj5uu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/w4Z3Ju8Q"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/zzquepJk"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/vBfkcntY"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/uFjjKB4K"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/A8qWQw94"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/D8SBhwev"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/BpTSkTfd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/LaT4xG8q"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/pGNPkrat"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/NLXQA8Fj"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/MabZeMqi"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/3pShHkN2"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/3aU3erZG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "drum-island",
+      "title": "Isla de Drum",
+      "description": "Cuando Nami cae enferma, la tripulación hace un desvío de Arabasta para buscar ayuda médica. Terminando en una isla de invierno habitada por una población desconfiada y una sola doctora con un misterioso reno de compañero.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/R7S1QewB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/yhYBgNVK"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/3YvSr4nH"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/JKLpijSD"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/5Ftx9CiE"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/afpanxXV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/mjzK3UDf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/zENGq89x"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/64E4bWVR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/7UCTmKAe"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/Y7QRxMfS"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/6sqtpg2d"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/AHpFB2Dc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/zQFBrLro"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/ANkSoGFG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/rpHvtLXT"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/sBj6BfrZ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/r5TYzBAG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/EYB1Dq6R"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/HKdeGbc4"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/AHpFB2Dc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/zQFBrLro"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/ANkSoGFG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/rpHvtLXT"
+          }
+        ]
+      }
+    },
+    {
+      "id": "alabasta",
+      "title": "Arabasta",
+      "description": "Arabasta está al borde de una guerra civil, y depende de la princesa Vivi y los Sombrero de Paja apaciguar la rebelión, revelar el complot de Baroque Works, y derrotar al Shichibukai Crocodile.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/v7JwmpPb"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/gTwDPNti"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/tAkT3em1"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/sV6G6fRD"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/o9kqyw8Y"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/EAs3qzwN"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/radmxEUL"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 8",
+            "url": "https://pixeldrain.net/api/file/61yaMMb6"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 9",
+            "url": "https://pixeldrain.net/api/file/UXi3dYyo"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 10",
+            "url": "https://pixeldrain.net/api/file/FggdCQ2t"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 11",
+            "url": "https://pixeldrain.net/api/file/DV5kPbnU"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 12",
+            "url": "https://pixeldrain.net/api/file/yNhJC5Pk"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 13",
+            "url": "https://pixeldrain.net/api/file/JHT4zRjo"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 14",
+            "url": "https://pixeldrain.net/api/file/SVs27YJn"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 15",
+            "url": "https://pixeldrain.net/api/file/LUMGAjrt"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 16",
+            "url": "https://pixeldrain.net/api/file/cjqhrFGv"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 17",
+            "url": "https://pixeldrain.net/api/file/yZmxToKZ"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 18",
+            "url": "https://pixeldrain.net/api/file/3A7Jz2im"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 19",
+            "url": "https://pixeldrain.net/api/file/PAATSryA"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 20",
+            "url": "https://pixeldrain.net/api/file/Gk5uEsCm"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 21",
+            "url": "https://pixeldrain.net/api/file/KsB5dQmt"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/v7JwmpPb"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/gTwDPNti"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/tAkT3em1"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/sV6G6fRD"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/o9kqyw8Y"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/EAs3qzwN"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/radmxEUL"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/61yaMMb6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/UXi3dYyo"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/FggdCQ2t"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/DV5kPbnU"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/yNhJC5Pk"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/JHT4zRjo"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/SVs27YJn"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/LUMGAjrt"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/cjqhrFGv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/Rvd2KaLM"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/YeiAVr9M"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/svjJGV2M"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/AuBk1Pfh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/2hjjnAp6"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/v7JwmpPb"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/gTwDPNti"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/tAkT3em1"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/sV6G6fRD"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/o9kqyw8Y"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/EAs3qzwN"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/radmxEUL"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/61yaMMb6"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 9",
+            "url": "https://pixeldrain.net/api/file/UXi3dYyo"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 10",
+            "url": "https://pixeldrain.net/api/file/FggdCQ2t"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 11",
+            "url": "https://pixeldrain.net/api/file/DV5kPbnU"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 12",
+            "url": "https://pixeldrain.net/api/file/yNhJC5Pk"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 13",
+            "url": "https://pixeldrain.net/api/file/JHT4zRjo"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 14",
+            "url": "https://pixeldrain.net/api/file/SVs27YJn"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 15",
+            "url": "https://pixeldrain.net/api/file/LUMGAjrt"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 16",
+            "url": "https://pixeldrain.net/api/file/cjqhrFGv"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 17",
+            "url": "https://pixeldrain.net/api/file/Rzca2qie"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 18",
+            "url": "https://pixeldrain.net/api/file/XquT4qJJ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 19",
+            "url": "https://pixeldrain.net/api/file/aogsWdS8"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 20",
+            "url": "https://pixeldrain.net/api/file/48WxrrPs"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 21",
+            "url": "https://pixeldrain.net/api/file/PL3Xkk2s"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jaya",
+      "title": "Jaya",
+      "description": "Los Sombrero de Paja buscan la fantástica isla en el cielo, Skypiea, y se dirigen a Jaya para buscar información de dónde se encuentra. Sus convicciones son puestas a prueba por los piratas de Mock Town, pero no todos en la isla son tan escépticos.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/AyFYfEE5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/9wie3Ffy"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/DpVgFZap"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/PFSgPPGh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/yFJj4PPX"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/YJfM1aVx"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/bwsEwoR4"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/36nk8MDA"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/kiM6ZgMC"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/UkRGk6aM"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/AyM7eRDC"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/TeAwWM9t"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/9x5VruZH"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/Z8csLMaR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/sxrpeSER"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/rgQnoSdD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skypiea",
+      "title": "Skypiea",
+      "description": "Llegando a Skypiea, los Sombrero de Paja inmediatamente se encuentran con vistas, objetos e incluso una aduana muy poco familiar. Lo que es más, el Dios de la Isla del Cielo considera que los visitantes del mar azul están haciendo un allanamiento y se desata un juicio sobre ellos.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/jt1MVZMG"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/cD47aEBd"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ujguHhnf"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/Z7wNCXNu"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/vjJnnjJG"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/5Yz3TyDj"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/9QRcTVJG"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 8",
+            "url": "https://pixeldrain.net/api/file/Qxwktvy6"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 9",
+            "url": "https://pixeldrain.net/api/file/aexzuQ6u"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 10",
+            "url": "https://pixeldrain.net/api/file/nHLL768M"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 11",
+            "url": "https://pixeldrain.net/api/file/JoTjdPMM"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 12",
+            "url": "https://pixeldrain.net/api/file/yx2aQmdb"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 13",
+            "url": "https://pixeldrain.net/api/file/j6hLvC4b"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 14",
+            "url": "https://pixeldrain.net/api/file/zBdtgp1w"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 15",
+            "url": "https://pixeldrain.net/api/file/an6F9aLQ"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 16",
+            "url": "https://pixeldrain.net/api/file/TVQ7kBff"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 17",
+            "url": "https://pixeldrain.net/api/file/WiHYWZcY"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 18",
+            "url": "https://pixeldrain.net/api/file/NXiNycKN"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 19",
+            "url": "https://pixeldrain.net/api/file/yc44WUkc"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 20",
+            "url": "https://pixeldrain.net/api/file/praBifkS"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 21",
+            "url": "https://pixeldrain.net/api/file/FikAkT4s"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 22",
+            "url": "https://pixeldrain.net/api/file/BAKzUBLH"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 23",
+            "url": "https://pixeldrain.net/api/file/YYqcK3Do"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 24",
+            "url": "https://pixeldrain.net/api/file/z2VBMFYt"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 25",
+            "url": "https://pixeldrain.net/api/file/RZWtpTzQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/jt1MVZMG"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/cD47aEBd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ujguHhnf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/Z7wNCXNu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/vjJnnjJG"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/5Yz3TyDj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/9QRcTVJG"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/Qxwktvy6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/aexzuQ6u"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/nHLL768M"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/yJSnQfM1"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/2wAubdPC"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/hazQbtKg"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/gZxZZap9"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/KUgd711T"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/8BMtLzoR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/CETJnrT3"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/zJVgEtVf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/uFrXF5JH"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/JxQXCwLE"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/GTz4JWpa"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/4tFwUDVc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 23",
+            "url": "https://pixeldrain.net/api/file/U44TxGPS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 24",
+            "url": "https://pixeldrain.net/api/file/vFRB7jtM"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 25",
+            "url": "https://pixeldrain.net/api/file/SzowiSvR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/jt1MVZMG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/cD47aEBd"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ujguHhnf"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/Z7wNCXNu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/vjJnnjJG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/5Yz3TyDj"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/9QRcTVJG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/Qxwktvy6"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 9",
+            "url": "https://pixeldrain.net/api/file/aexzuQ6u"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 10",
+            "url": "https://pixeldrain.net/api/file/nHLL768M"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 11",
+            "url": "https://pixeldrain.net/api/file/yJSnQfM1"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 12",
+            "url": "https://pixeldrain.net/api/file/2wAubdPC"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 13",
+            "url": "https://pixeldrain.net/api/file/hazQbtKg"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 14",
+            "url": "https://pixeldrain.net/api/file/nV3KAfJP"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 15",
+            "url": "https://pixeldrain.net/api/file/LBYh6i5Q"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 16",
+            "url": "https://pixeldrain.net/api/file/uYbcc4gV"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 17",
+            "url": "https://pixeldrain.net/api/file/VvZqEoc8"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 18",
+            "url": "https://pixeldrain.net/api/file/2QvzctFF"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 19",
+            "url": "https://pixeldrain.net/api/file/c3MgdwJX"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 20",
+            "url": "https://pixeldrain.net/api/file/rzDiv8Yr"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 21",
+            "url": "https://pixeldrain.net/api/file/fr3iBkwB"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 22",
+            "url": "https://pixeldrain.net/api/file/qaDGw4kz"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 23",
+            "url": "https://pixeldrain.net/api/file/a3a6pYDE"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 24",
+            "url": "https://pixeldrain.net/api/file/UTNrWks5"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 25",
+            "url": "https://pixeldrain.net/api/file/P8qzthvd"
+          }
+        ]
+      }
+    },
+    {
+      "id": "water-seven",
+      "title": "Water Seven",
+      "description": "Los Sombrero de Paja caen en la gloriosa ciudad de Water Seven, conocida mundialmente por sus astilleros sin precedentes. Los piratas van a preguntar sobre las reparaciones de su barco, pero la ciudad amenaza con quedarse con su dinero, barco y tripulantes.",
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/T4xWniso"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/pUWgejEj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/kQfCvBjd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/FDkzHtL9"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/VKtjkCxi"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/s7DZmpWT"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/xJB1z5jC"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/CbgmbXRu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/PuWhXi6Z"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/QBNtLcZJ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "enies-lobby",
+      "title": "Enies Lobby",
+      "description": "Para poder liberar a Nico Robin de las garras del Gobierno Mundial, los Sombrero de Paja y sus aliados deben invadir la Isla Judicial, Enies Lobby, y derrotar a la prestigiosa unidad clandestina del gobierno: CP9.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/Jg7MR88x"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/up17rwAq"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/jiCJdRBX"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/cMFfFt1W"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/HqBWPoab"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/ahJpHHsu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/xtsR52Zh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ZwgwUD3L"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/DykWynx9"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/zh4e3Sqc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/1rjvGyCH"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/aSCNiyZj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/C6yqF84E"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/rtcDZ4K2"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/YKvuR9Wo"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/M7tkGJHY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/ue4hCTvG"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/ynPyVpbE"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/YsXexKL3"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/6JiYtDG5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/fft78VES"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/CoxPB7t5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 23",
+            "url": "https://pixeldrain.net/api/file/ksBgR8Mo"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 24",
+            "url": "https://pixeldrain.net/api/file/e8Rf3Jvb"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 25",
+            "url": "https://pixeldrain.net/api/file/ALnyPQ7G"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/adPcbRZH"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/uPQmN1TX"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/eioFN4FG"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/zGkjaG6h"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/8gAxK8hB"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/rAdE5RDN"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/7m4iiqUK"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/BLmwyNPa"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 9",
+            "url": "https://pixeldrain.net/api/file/2VzLiwNb"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 10",
+            "url": "https://pixeldrain.net/api/file/tR2vzRX5"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 11",
+            "url": "https://pixeldrain.net/api/file/j6rnZwuS"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 12",
+            "url": "https://pixeldrain.net/api/file/7BR7F6nf"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 13",
+            "url": "https://pixeldrain.net/api/file/9ETc4sWQ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 14",
+            "url": "https://pixeldrain.net/api/file/sfK64rCJ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 15",
+            "url": "https://pixeldrain.net/api/file/SbhLpwHu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 16",
+            "url": "https://pixeldrain.net/api/file/4XqJStUU"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 17",
+            "url": "https://pixeldrain.net/api/file/V4guZDPx"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 18",
+            "url": "https://pixeldrain.net/api/file/GxiP9MBR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 19",
+            "url": "https://pixeldrain.net/api/file/jwTNZsjs"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 20",
+            "url": "https://pixeldrain.net/api/file/ozv8ft9M"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 21",
+            "url": "https://pixeldrain.net/api/file/UqxMmvfU"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 22",
+            "url": "https://pixeldrain.net/api/file/Co66YeJH"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 23",
+            "url": "https://pixeldrain.net/api/file/Zw34jWFu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 24",
+            "url": "https://pixeldrain.net/api/file/Sv8bir6X"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 25",
+            "url": "https://pixeldrain.net/api/file/12o5ttDp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "thriller-bark",
+      "title": "Thriller Bark",
+      "description": "El próximo destino de los Sombrero de Paja es la Isla Gyojin, pero primero deben atravesar el temido Florian Triangle que es conocido por las terribles y misteriosas cosas que suceden allí, como la desaparición de tripulaciones, esqueletos que hablan, y una isla flotante llena de zombis y más horrores.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/7HAJQ8KP"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/RaaPz88Y"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/F1EFhMfc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/ZvHSa8Ki"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/GdSJxTzf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/E9YwWUmE"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/4rd5Px1w"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/5fCwSqty"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/GS73pGtW"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/jebodeQH"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/J71hTn6n"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/xxY9JngK"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/fEphbmjY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/F4117XaW"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/yCBJCHnP"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/Zk44nUpP"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/MPH1Ff9w"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/2AMijNt1"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/LVv2PYP5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/cWUy5Jv6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/x43yosWH"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/Yjz8ozxe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sabaody-archipelago",
+      "title": "Archipiélago Sabaody",
+      "description": "La segunda mitad del Grand Line yace justo al frente, por lo que los Sombrero de Paja se detienen en el Archipiélago Sabaody para planificar cómo avanzar. Pero al estar tan cerca de la Tierra Santa y los cuarteles de la Marina, la tripulación de Luffy se debe enfrentar cara a cara con las fuerzas más oscuras del Gobierno Mundial.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/DJ7iM964"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/guZGmQ5s"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/8moe8y7L"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/aD7BHd1X"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/gk2eYwrg"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/iaSB81U7"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/WVG7jA74"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/jFu5KNBQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/ZmRLq126"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/airA2RjZ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/4ZEqMBvT"
+          }
+        ]
+      }
+    },
+    {
+      "id": "amazon-lily",
+      "title": "Amazon Lily",
+      "description": "Luffy es separado de su tripulación, y se encuentra en una extraña isla en la mitad del Calm Belt... Una isla habitada sólamente por mujeres, donde los hombres tienen totalmente prohibido acceder.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/A9csn53V"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/p6An3d5t"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/zuehFrNa"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/sVRCS61k"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/Jz5AY5Et"
+          }
+        ]
+      }
+    },
+    {
+      "id": "impel-down",
+      "title": "Impel Down",
+      "description": "Luffy se lanza a una atrevida misión de rescate para liberar a su hermano mayor Ace de la prisión del gobierno, Impel Down. Es una carrera hacia los niveles más bajos de la prisión. Será un viaje a través del infierno.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/BEFTw8YB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/qa1SqBqr"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/6oda9cno"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/wg35XzaB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/spX8Evub"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/z9pC8Umv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/vX7C8iox"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/6VDdvupV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/wHTDrzzZ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/5nSHbEqJ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "if-you-could-go-anywhere-the-adventures-of-the-straw-hats",
+      "title": "Si fueras a salir de viaje... Las aventuras de los Sombrero de Paja",
+      "description": "En algún lugar del mundo... Sanji se resiste, Robin se encuentra con personas terribles, Franky no es el mismo, Usopp aprende a sobrevivir, Chopper evita convertirse en comida, y Nami informa sobre el clima. A Brook le pagan en bragas, y Zoro... está perdido y molesto.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p",
+            "url": "https://pixeldrain.net/api/file/orYVZ1rU"
+          },
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/D1EaYWS8"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/tsQq47Qs"
+          }
+        ]
+      },
+      "dub": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p",
+            "url": "https://pixeldrain.net/api/file/cEwQdfno"
+          },
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/vqhFJYb1"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/y2abG7r5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "marineford",
+      "title": "Marineford",
+      "description": "El pirata Barbablanca y sus aliados por un lado; la Marina y los Shichibukai del otro. Y en el centro de todo, Portgas D. Ace y su pasado oculto y herencia. Luffy corre hacia la tarima de ejecución de Ace en una batalla entre las personas más poderosas del mundo.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/4L1pGdNP"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/uktbKz2T"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/vcVsd9nz"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/pS4kxS9e"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/qFHV6ZL8"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/MLQHFjrY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/hYdNdCGj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/qrxAhFwL"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/xgvZCD1t"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/VAAB1MED"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/e9ZSiWDt"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/AsowQ1D9"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/erVfSUKS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/kLqbmZCK"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/CoPbHEDd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/9oqhyCxJ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/jsBDRHm6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "post-war",
+      "title": "3D2Y",
+      "description": "La guerra ha marcado al mundo entero, y Luffy recuerda sus días de niñez cuando conoció a Ace y se volvió su hermano. Para volverse lo suficientemente poderoso para encarar el Nuevo Mundo, Luffy debe tomar una crítica decisión para sí mismo y su tripulación.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/hXniCFSB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/xLwqiRZK"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/qkVGPPan"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/S6tr4PMh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/2wt2Jr4z"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/KYbDmaKU"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/ByMDtLU5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/GvnYHUyW"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/jk5ZYcGS"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/h2XJWqkU"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/d4anobCw"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/MF2GAied"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/4RhxbCv3"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/Yz9bE9Lc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/hyUKr3Hr"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ZW9Ly8xj"
+          }
+        ]
+      }
+    },
+    {
+      "id": "return-to-sabaody",
+      "title": "Regreso a Sabaody",
+      "description": "Dos años han pasado desde que los Sombrero de Paja fueron forzosamente separados, y se han vuelto a juntar en Sabaody más fuertes y aún más comprometidos en la continuación de su viaje.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/BSN1eS5b"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/HyL6tfi1"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/j5yWFTUq"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/WhJYLSNQ"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/CkaNBUvu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/g1NbZfgD"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fishman-island",
+      "title": "Isla Gyojin",
+      "description": "El camino al Nuevo Mundo lleva a los Sombrero de Paja a cientos de leguas bajo el mar, a la isla submarina de los gyojin. Sin embargo, el oscuro pasado de la isla está llegando a un punto de quiebre, y Luffy así como su tripulación están atrapados en el medio del conflicto.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/c2M5cZcW"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/Cp4Am9R7"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/LP6EUpgC"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/qzG7i4iR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/jPBHC16E"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/niHyrukV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/bfvosr2B"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/wiEoqRpd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/Qsm9yENf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/u3bci8iq"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/YPH81LEW"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/4BxAF9FJ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/poUTc391"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/hSEgbJjG"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/ymnzuqdz"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/UwvN7LuV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/UoLMFJac"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/UVyviJgE"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/DEo8TTU6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/FLzj6DpJ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/LystBn7n"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/HrGBvork"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 23",
+            "url": "https://pixeldrain.net/api/file/vfXQ9FpZ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 24",
+            "url": "https://pixeldrain.net/api/file/sDqHT1u5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "punk-hazard",
+      "title": "Punk Hazard",
+      "description": "La primera isla del Nuevo Mundo es un extraño lugar cubierto de llamas en una mitad, y temperaturas congelantes en la otra. En lo que parece ser un lugar inhabitable a primera vista, pronto revelará un laboratorio, un científico maniático, y cierto Shichibukai.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/HtN3xmzQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/CuF1EV2D"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/EwQZweke"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/irLESZ74"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/m4ZXc7SB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/SNiyK1Bu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/DN3u2Wcd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/2Br3jSqb"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/RQmygxqV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/aZMdSojy"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/tiMpT9MK"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/4QnxAvS5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/vA85bLp8"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/mWc5kTxF"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/zru7ddxa"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/s1MJd66G"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/bodjaVx9"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/ZrKpp4cy"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/jrF5Guyk"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/9sGQH8fy"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/Kqa5QCG8"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/zcPNFbTM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dressrosa",
+      "title": "Dressrosa",
+      "description": "La alianza con Law los lleva a Dressrosa para derrocar el exitoso negocio de Doflamingo. Pero el lunático Shichibukai y autoproclamado gobernante de Dressrosa tiene el control sobre todos y todo.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/csb1fKH4"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/sbSP23Uu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/h7cQNMYg"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/8cDRKgcB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/mv1HXf1Q"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/2hRjRuXA"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/kZmTugkS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/ZX893gRh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/mZJoVzhd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/zW25gAhS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/ndiysVFT"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/1oGmFRu5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/9j66jvtT"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/oPBUUCJc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/ZW29yut6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/ebcyAekV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/G5uaYLpm"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/LUDiWXHR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/H9kRe4Ms"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/GY17FaGJ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/SbXrqE4D"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/YTP5YTQu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 23",
+            "url": "https://pixeldrain.net/api/file/c7u36cH4"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 24",
+            "url": "https://pixeldrain.net/api/file/LwtbkMt4"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 25",
+            "url": "https://pixeldrain.net/api/file/L361AFcd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 26",
+            "url": "https://pixeldrain.net/api/file/itDUBXv6"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 27",
+            "url": "https://pixeldrain.net/api/file/XzA16xY5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 28",
+            "url": "https://pixeldrain.net/api/file/oEXmLZze"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 29",
+            "url": "https://pixeldrain.net/api/file/LbQVQ3AF"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 30",
+            "url": "https://pixeldrain.net/api/file/8SX6TUaY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 31",
+            "url": "https://pixeldrain.net/api/file/DenaXCta"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 32",
+            "url": "https://pixeldrain.net/api/file/AYfZu5qd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 33",
+            "url": "https://pixeldrain.net/api/file/cbxT3KB2"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 34",
+            "url": "https://pixeldrain.net/api/file/vzs9faEr"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 35",
+            "url": "https://pixeldrain.net/api/file/R2Xs29NG"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 36",
+            "url": "https://pixeldrain.net/api/file/U1XCXFhS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 37",
+            "url": "https://pixeldrain.net/api/file/ZEewS2uc"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 38",
+            "url": "https://pixeldrain.net/api/file/xzFwgp5a"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 39",
+            "url": "https://pixeldrain.net/api/file/dFSUfJct"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 40",
+            "url": "https://pixeldrain.net/api/file/GwyBYAsW"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 41",
+            "url": "https://pixeldrain.net/api/file/asH9cVyL"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 42",
+            "url": "https://pixeldrain.net/api/file/9RRUfWFk"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 43",
+            "url": "https://pixeldrain.net/api/file/hKXuNJ2A"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 44",
+            "url": "https://pixeldrain.net/api/file/V29yQ5so"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 45",
+            "url": "https://pixeldrain.net/api/file/ExsaQMkE"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 46",
+            "url": "https://pixeldrain.net/api/file/sKvUkirS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 47",
+            "url": "https://pixeldrain.net/api/file/VDT4kQHU"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 48",
+            "url": "https://pixeldrain.net/api/file/8ib1QN7D"
+          }
+        ]
+      }
+    },
+    {
+      "id": "zou",
+      "title": "Zou",
+      "description": "A Zou no se puede llegar por métodos convencionales, y tampoco es fácil entrar una vez lo encuentras. Dentro de sus calladas murallas vive la Tribu Mink, y los Sombrero de Paja pronto descubrirán que la gente de Zou tiene una pieza clave del puzzle que revela los misterios del mundo.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/SuRVrntX"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/aCrYNTfy"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/DQJMiHqi"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/RZUwibGn"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/sDsFjsrV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/BkgC5GJY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/pCSHA5xj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/pa9Q5vYa"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/jEgy18Li"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/EKJBP8e1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "whole-cake-island",
+      "title": "Whole Cake Island",
+      "description": "Luffy no se irá al mar sin su cocinero, así que testarudamente va tras Sanji hacia Whole Cake Island. Sin embargo, golpear la puerta de un Yonkou es algo más fácil de decir que hacer.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/zPaxsD3F"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/badiwjfQ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/U8UP3nG1"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/RpgYMmsf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/j5BfDUrh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/kbR9EpXW"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/YELLDL2W"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/qU2juhQC"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/f6nVv612"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/7jPTHTKq"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/45EB2Wq3"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/5yBZQaqx"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/ETQA6K1v"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/ynT2mHYh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/H1Hwrkii"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/qTVixCjB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/inqcVydv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/JrubWi8u"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/8e9Ru72D"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/bL5bdb7u"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/eoms4iME"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/kyhtogYL"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 23",
+            "url": "https://pixeldrain.net/api/file/GtQ8f2f5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 24",
+            "url": "https://pixeldrain.net/api/file/dXSjq2AZ"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 25",
+            "url": "https://pixeldrain.net/api/file/S2W127Ef"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 26",
+            "url": "https://pixeldrain.net/api/file/ThZjhgAK"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 27",
+            "url": "https://pixeldrain.net/api/file/RiJyPnht"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 28",
+            "url": "https://pixeldrain.net/api/file/mUEfbM5a"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 29",
+            "url": "https://pixeldrain.net/api/file/9rMqjBV8"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 30",
+            "url": "https://pixeldrain.net/api/file/EhxzHnSe"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 31",
+            "url": "https://pixeldrain.net/api/file/UX2r5Cfq"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 32",
+            "url": "https://pixeldrain.net/api/file/6G4N66pP"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 33",
+            "url": "https://pixeldrain.net/api/file/2vmmF3Mx"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 34",
+            "url": "https://pixeldrain.net/api/file/UpMhmbJj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 35",
+            "url": "https://pixeldrain.net/api/file/jcyPtZEv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 36",
+            "url": "https://pixeldrain.net/api/file/CiskbtB1"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 37",
+            "url": "https://pixeldrain.net/api/file/sf7frEmd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 38",
+            "url": "https://pixeldrain.net/api/file/re9vkuRs"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 39",
+            "url": "https://pixeldrain.net/api/file/f7ZdAd9f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reverie",
+      "title": "Levely",
+      "description": "Cada cuatro años, los líderes del mundo se reúnen en Mary Geoise para discutir en mutuo acuerdo el camino a seguir del gobierno. Pero en este Levely en particular, muchos grupos tienen sus propias intenciones... y otros no están invitados.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/2zJz6PBN"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/MkzDvLaJ"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/Pewj67ML"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/NNdoxU1Y"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/ddMbL8Cf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/YcGEa7VU"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/oJN3o4xW"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/cbWw2GYc"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/BBN9jmqF"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wano",
+      "title": "País de Wa",
+      "description": "Los Sombrero de Paja finalmente se reagrupan en el País de Wa para llevar acabo el objetivo final de ellos y sus aliados: ver la caída del Yonkou Kaidou y restaurar el legítimo poder de la familia Kouzuki.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p - Video 1",
+            "url": "https://pixeldrain.net/api/file/i471hcdY"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 2",
+            "url": "https://pixeldrain.net/api/file/ooBwLoj8"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 3",
+            "url": "https://pixeldrain.net/api/file/MTSChCEJ"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 4",
+            "url": "https://pixeldrain.net/api/file/y8WbMtcU"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 5",
+            "url": "https://pixeldrain.net/api/file/wptKzDyD"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 6",
+            "url": "https://pixeldrain.net/api/file/nAVrH7aT"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 7",
+            "url": "https://pixeldrain.net/api/file/wPDsS7fn"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 8",
+            "url": "https://pixeldrain.net/api/file/fcLGk97i"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 9",
+            "url": "https://pixeldrain.net/api/file/nGYmQxzu"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 10",
+            "url": "https://pixeldrain.net/api/file/dB4vMAtB"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 11",
+            "url": "https://pixeldrain.net/api/file/nV4rQ7sL"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 12",
+            "url": "https://pixeldrain.net/api/file/r6gzt4cA"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 13",
+            "url": "https://pixeldrain.net/api/file/dv7Yumsd"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 14",
+            "url": "https://pixeldrain.net/api/file/E7K72bEH"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 15",
+            "url": "https://pixeldrain.net/api/file/BbCQWQk5"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 16",
+            "url": "https://pixeldrain.net/api/file/697W4bwR"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 17",
+            "url": "https://pixeldrain.net/api/file/KtEUzTyx"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 18",
+            "url": "https://pixeldrain.net/api/file/kjiSmDFF"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 19",
+            "url": "https://pixeldrain.net/api/file/dc739x4m"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 20",
+            "url": "https://pixeldrain.net/api/file/6SQNZ26R"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 21",
+            "url": "https://pixeldrain.net/api/file/cCRnNgE2"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 22",
+            "url": "https://pixeldrain.net/api/file/kr5XzBWY"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 23",
+            "url": "https://pixeldrain.net/api/file/y3ZebDkV"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 24",
+            "url": "https://pixeldrain.net/api/file/orqD5mcv"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 25",
+            "url": "https://pixeldrain.net/api/file/nvuvZAxP"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 26",
+            "url": "https://pixeldrain.net/api/file/P8i5wLdo"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 27",
+            "url": "https://pixeldrain.net/api/file/FiE27CXw"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 28",
+            "url": "https://pixeldrain.net/api/file/vsz5iagR"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 29",
+            "url": "https://pixeldrain.net/api/file/Z18yX8RD"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 30",
+            "url": "https://pixeldrain.net/api/file/9vr3Qdpf"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 31",
+            "url": "https://pixeldrain.net/api/file/foo1aJGm"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 32",
+            "url": "https://pixeldrain.net/api/file/ZChAjxsr"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 33",
+            "url": "https://pixeldrain.net/api/file/XEYmbePV"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 34",
+            "url": "https://pixeldrain.net/api/file/DB11niNj"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 35",
+            "url": "https://pixeldrain.net/api/file/mAu3HHtS"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 36",
+            "url": "https://pixeldrain.net/api/file/V9gdvPH3"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 37",
+            "url": "https://pixeldrain.net/api/file/zk4citsh"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 38",
+            "url": "https://pixeldrain.net/api/file/DAfHrU7k"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 39",
+            "url": "https://pixeldrain.net/api/file/FQ4RrhnD"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 40",
+            "url": "https://pixeldrain.net/api/file/q4aUkkVw"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 41",
+            "url": "https://pixeldrain.net/api/file/ncThfMd9"
+          },
+          {
+            "quality": "Pixeldrain: 480p - Video 42",
+            "url": "https://pixeldrain.net/api/file/gg111ePF"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 1",
+            "url": "https://pixeldrain.net/api/file/DnZfcsDC"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 2",
+            "url": "https://pixeldrain.net/api/file/p58DLh47"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 3",
+            "url": "https://pixeldrain.net/api/file/ybNPEet2"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 4",
+            "url": "https://pixeldrain.net/api/file/y8WbMtcU"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 5",
+            "url": "https://pixeldrain.net/api/file/wptKzDyD"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 6",
+            "url": "https://pixeldrain.net/api/file/nAVrH7aT"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 7",
+            "url": "https://pixeldrain.net/api/file/wPDsS7fn"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 8",
+            "url": "https://pixeldrain.net/api/file/fcLGk97i"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 9",
+            "url": "https://pixeldrain.net/api/file/nGYmQxzu"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 10",
+            "url": "https://pixeldrain.net/api/file/dB4vMAtB"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 11",
+            "url": "https://pixeldrain.net/api/file/nV4rQ7sL"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 12",
+            "url": "https://pixeldrain.net/api/file/r6gzt4cA"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 13",
+            "url": "https://pixeldrain.net/api/file/dv7Yumsd"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 14",
+            "url": "https://pixeldrain.net/api/file/E7K72bEH"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 15",
+            "url": "https://pixeldrain.net/api/file/BbCQWQk5"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 16",
+            "url": "https://pixeldrain.net/api/file/697W4bwR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 17",
+            "url": "https://pixeldrain.net/api/file/KtEUzTyx"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 18",
+            "url": "https://pixeldrain.net/api/file/kjiSmDFF"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 19",
+            "url": "https://pixeldrain.net/api/file/dc739x4m"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 20",
+            "url": "https://pixeldrain.net/api/file/6SQNZ26R"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 21",
+            "url": "https://pixeldrain.net/api/file/cCRnNgE2"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 22",
+            "url": "https://pixeldrain.net/api/file/kr5XzBWY"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 23",
+            "url": "https://pixeldrain.net/api/file/y3ZebDkV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 24",
+            "url": "https://pixeldrain.net/api/file/orqD5mcv"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 25",
+            "url": "https://pixeldrain.net/api/file/nvuvZAxP"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 26",
+            "url": "https://pixeldrain.net/api/file/P8i5wLdo"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 27",
+            "url": "https://pixeldrain.net/api/file/FiE27CXw"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 28",
+            "url": "https://pixeldrain.net/api/file/vsz5iagR"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 29",
+            "url": "https://pixeldrain.net/api/file/Z18yX8RD"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 30",
+            "url": "https://pixeldrain.net/api/file/9vr3Qdpf"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 31",
+            "url": "https://pixeldrain.net/api/file/foo1aJGm"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 32",
+            "url": "https://pixeldrain.net/api/file/ZChAjxsr"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 33",
+            "url": "https://pixeldrain.net/api/file/XEYmbePV"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 34",
+            "url": "https://pixeldrain.net/api/file/DB11niNj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 35",
+            "url": "https://pixeldrain.net/api/file/mAu3HHtS"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 36",
+            "url": "https://pixeldrain.net/api/file/V9gdvPH3"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 37",
+            "url": "https://pixeldrain.net/api/file/zk4citsh"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 38",
+            "url": "https://pixeldrain.net/api/file/DAfHrU7k"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 39",
+            "url": "https://pixeldrain.net/api/file/QLPZLirn"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 40",
+            "url": "https://pixeldrain.net/api/file/5jr26KeL"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 41",
+            "url": "https://pixeldrain.net/api/file/JeLRniPj"
+          },
+          {
+            "quality": "Pixeldrain: 720p - Video 42",
+            "url": "https://pixeldrain.net/api/file/AUmUtZs9"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 1",
+            "url": "https://pixeldrain.net/api/file/k1CQs1e5"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 2",
+            "url": "https://pixeldrain.net/api/file/zWSZidTd"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 3",
+            "url": "https://pixeldrain.net/api/file/31iNDP7p"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 4",
+            "url": "https://pixeldrain.net/api/file/y8WbMtcU"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 5",
+            "url": "https://pixeldrain.net/api/file/wptKzDyD"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 6",
+            "url": "https://pixeldrain.net/api/file/nAVrH7aT"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 7",
+            "url": "https://pixeldrain.net/api/file/wPDsS7fn"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 8",
+            "url": "https://pixeldrain.net/api/file/fcLGk97i"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 9",
+            "url": "https://pixeldrain.net/api/file/nGYmQxzu"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 10",
+            "url": "https://pixeldrain.net/api/file/dB4vMAtB"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 11",
+            "url": "https://pixeldrain.net/api/file/nV4rQ7sL"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 12",
+            "url": "https://pixeldrain.net/api/file/r6gzt4cA"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 13",
+            "url": "https://pixeldrain.net/api/file/dv7Yumsd"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 14",
+            "url": "https://pixeldrain.net/api/file/E7K72bEH"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 15",
+            "url": "https://pixeldrain.net/api/file/BbCQWQk5"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 16",
+            "url": "https://pixeldrain.net/api/file/697W4bwR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 17",
+            "url": "https://pixeldrain.net/api/file/KtEUzTyx"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 18",
+            "url": "https://pixeldrain.net/api/file/kjiSmDFF"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 19",
+            "url": "https://pixeldrain.net/api/file/dc739x4m"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 20",
+            "url": "https://pixeldrain.net/api/file/6SQNZ26R"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 21",
+            "url": "https://pixeldrain.net/api/file/cCRnNgE2"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 22",
+            "url": "https://pixeldrain.net/api/file/kr5XzBWY"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 23",
+            "url": "https://pixeldrain.net/api/file/y3ZebDkV"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 24",
+            "url": "https://pixeldrain.net/api/file/orqD5mcv"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 25",
+            "url": "https://pixeldrain.net/api/file/nvuvZAxP"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 26",
+            "url": "https://pixeldrain.net/api/file/P8i5wLdo"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 27",
+            "url": "https://pixeldrain.net/api/file/FiE27CXw"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 28",
+            "url": "https://pixeldrain.net/api/file/vsz5iagR"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 29",
+            "url": "https://pixeldrain.net/api/file/Z18yX8RD"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 30",
+            "url": "https://pixeldrain.net/api/file/9vr3Qdpf"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 31",
+            "url": "https://pixeldrain.net/api/file/foo1aJGm"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 32",
+            "url": "https://pixeldrain.net/api/file/ZChAjxsr"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 33",
+            "url": "https://pixeldrain.net/api/file/XEYmbePV"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 34",
+            "url": "https://pixeldrain.net/api/file/DB11niNj"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 35",
+            "url": "https://pixeldrain.net/api/file/mAu3HHtS"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 36",
+            "url": "https://pixeldrain.net/api/file/V9gdvPH3"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 37",
+            "url": "https://pixeldrain.net/api/file/zk4citsh"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 38",
+            "url": "https://pixeldrain.net/api/file/DAfHrU7k"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 39",
+            "url": "https://pixeldrain.net/api/file/QLPZLirn"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 40",
+            "url": "https://pixeldrain.net/api/file/UMk6VX39"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 41",
+            "url": "https://pixeldrain.net/api/file/x2hb7uLp"
+          },
+          {
+            "quality": "Pixeldrain:1080p - Video 42",
+            "url": "https://pixeldrain.net/api/file/Vw4mDr9X"
+          }
+        ]
+      },
+      "extended": {
+        "subtitle": {
+          "qualities": [
+            {
+              "quality": "Pixeldrain: 480p - Video 1",
+              "url": "https://pixeldrain.net/api/file/i471hcdY"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 2",
+              "url": "https://pixeldrain.net/api/file/TAfvbgkp"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 3",
+              "url": "https://pixeldrain.net/api/file/MTSChCEJ"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 4",
+              "url": "https://pixeldrain.net/api/file/y8WbMtcU"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 5",
+              "url": "https://pixeldrain.net/api/file/wptKzDyD"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 6",
+              "url": "https://pixeldrain.net/api/file/nAVrH7aT"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 7",
+              "url": "https://pixeldrain.net/api/file/wPDsS7fn"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 8",
+              "url": "https://pixeldrain.net/api/file/fcLGk97i"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 9",
+              "url": "https://pixeldrain.net/api/file/nGYmQxzu"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 10",
+              "url": "https://pixeldrain.net/api/file/dB4vMAtB"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 11",
+              "url": "https://pixeldrain.net/api/file/nV4rQ7sL"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 12",
+              "url": "https://pixeldrain.net/api/file/r6gzt4cA"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 13",
+              "url": "https://pixeldrain.net/api/file/dv7Yumsd"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 14",
+              "url": "https://pixeldrain.net/api/file/E7K72bEH"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 15",
+              "url": "https://pixeldrain.net/api/file/BbCQWQk5"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 16",
+              "url": "https://pixeldrain.net/api/file/697W4bwR"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 17",
+              "url": "https://pixeldrain.net/api/file/KtEUzTyx"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 18",
+              "url": "https://pixeldrain.net/api/file/kjiSmDFF"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 19",
+              "url": "https://pixeldrain.net/api/file/dc739x4m"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 20",
+              "url": "https://pixeldrain.net/api/file/6SQNZ26R"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 21",
+              "url": "https://pixeldrain.net/api/file/cCRnNgE2"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 22",
+              "url": "https://pixeldrain.net/api/file/kr5XzBWY"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 23",
+              "url": "https://pixeldrain.net/api/file/y3ZebDkV"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 24",
+              "url": "https://pixeldrain.net/api/file/orqD5mcv"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 25",
+              "url": "https://pixeldrain.net/api/file/nvuvZAxP"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 26",
+              "url": "https://pixeldrain.net/api/file/P8i5wLdo"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 27",
+              "url": "https://pixeldrain.net/api/file/FiE27CXw"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 28",
+              "url": "https://pixeldrain.net/api/file/vsz5iagR"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 29",
+              "url": "https://pixeldrain.net/api/file/Z18yX8RD"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 30",
+              "url": "https://pixeldrain.net/api/file/9vr3Qdpf"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 31",
+              "url": "https://pixeldrain.net/api/file/foo1aJGm"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 32",
+              "url": "https://pixeldrain.net/api/file/ZChAjxsr"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 33",
+              "url": "https://pixeldrain.net/api/file/XEYmbePV"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 34",
+              "url": "https://pixeldrain.net/api/file/DB11niNj"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 35",
+              "url": "https://pixeldrain.net/api/file/mAu3HHtS"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 36",
+              "url": "https://pixeldrain.net/api/file/V9gdvPH3"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 37",
+              "url": "https://pixeldrain.net/api/file/zk4citsh"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 38",
+              "url": "https://pixeldrain.net/api/file/DAfHrU7k"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 39",
+              "url": "https://pixeldrain.net/api/file/FQ4RrhnD"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 40",
+              "url": "https://pixeldrain.net/api/file/q4aUkkVw"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 41",
+              "url": "https://pixeldrain.net/api/file/ncThfMd9"
+            },
+            {
+              "quality": "Pixeldrain: 480p - Video 42",
+              "url": "https://pixeldrain.net/api/file/gg111ePF"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 1",
+              "url": "https://pixeldrain.net/api/file/DnZfcsDC"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 2",
+              "url": "https://pixeldrain.net/api/file/wdsKDJEs"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 3",
+              "url": "https://pixeldrain.net/api/file/ybNPEet2"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 4",
+              "url": "https://pixeldrain.net/api/file/y8WbMtcU"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 5",
+              "url": "https://pixeldrain.net/api/file/wptKzDyD"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 6",
+              "url": "https://pixeldrain.net/api/file/nAVrH7aT"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 7",
+              "url": "https://pixeldrain.net/api/file/wPDsS7fn"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 8",
+              "url": "https://pixeldrain.net/api/file/fcLGk97i"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 9",
+              "url": "https://pixeldrain.net/api/file/nGYmQxzu"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 10",
+              "url": "https://pixeldrain.net/api/file/dB4vMAtB"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 11",
+              "url": "https://pixeldrain.net/api/file/nV4rQ7sL"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 12",
+              "url": "https://pixeldrain.net/api/file/r6gzt4cA"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 13",
+              "url": "https://pixeldrain.net/api/file/dv7Yumsd"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 14",
+              "url": "https://pixeldrain.net/api/file/E7K72bEH"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 15",
+              "url": "https://pixeldrain.net/api/file/BbCQWQk5"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 16",
+              "url": "https://pixeldrain.net/api/file/697W4bwR"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 17",
+              "url": "https://pixeldrain.net/api/file/KtEUzTyx"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 18",
+              "url": "https://pixeldrain.net/api/file/kjiSmDFF"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 19",
+              "url": "https://pixeldrain.net/api/file/dc739x4m"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 20",
+              "url": "https://pixeldrain.net/api/file/6SQNZ26R"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 21",
+              "url": "https://pixeldrain.net/api/file/cCRnNgE2"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 22",
+              "url": "https://pixeldrain.net/api/file/kr5XzBWY"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 23",
+              "url": "https://pixeldrain.net/api/file/y3ZebDkV"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 24",
+              "url": "https://pixeldrain.net/api/file/orqD5mcv"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 25",
+              "url": "https://pixeldrain.net/api/file/nvuvZAxP"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 26",
+              "url": "https://pixeldrain.net/api/file/P8i5wLdo"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 27",
+              "url": "https://pixeldrain.net/api/file/FiE27CXw"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 28",
+              "url": "https://pixeldrain.net/api/file/vsz5iagR"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 29",
+              "url": "https://pixeldrain.net/api/file/Z18yX8RD"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 30",
+              "url": "https://pixeldrain.net/api/file/9vr3Qdpf"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 31",
+              "url": "https://pixeldrain.net/api/file/foo1aJGm"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 32",
+              "url": "https://pixeldrain.net/api/file/ZChAjxsr"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 33",
+              "url": "https://pixeldrain.net/api/file/XEYmbePV"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 34",
+              "url": "https://pixeldrain.net/api/file/DB11niNj"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 35",
+              "url": "https://pixeldrain.net/api/file/mAu3HHtS"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 36",
+              "url": "https://pixeldrain.net/api/file/V9gdvPH3"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 37",
+              "url": "https://pixeldrain.net/api/file/zk4citsh"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 38",
+              "url": "https://pixeldrain.net/api/file/DAfHrU7k"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 39",
+              "url": "https://pixeldrain.net/api/file/QLPZLirn"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 40",
+              "url": "https://pixeldrain.net/api/file/5jr26KeL"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 41",
+              "url": "https://pixeldrain.net/api/file/JeLRniPj"
+            },
+            {
+              "quality": "Pixeldrain: 720p - Video 42",
+              "url": "https://pixeldrain.net/api/file/AUmUtZs9"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 1",
+              "url": "https://pixeldrain.net/api/file/k1CQs1e5"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 2",
+              "url": "https://pixeldrain.net/api/file/c7fMJfF2"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 3",
+              "url": "https://pixeldrain.net/api/file/31iNDP7p"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 4",
+              "url": "https://pixeldrain.net/api/file/y8WbMtcU"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 5",
+              "url": "https://pixeldrain.net/api/file/wptKzDyD"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 6",
+              "url": "https://pixeldrain.net/api/file/nAVrH7aT"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 7",
+              "url": "https://pixeldrain.net/api/file/wPDsS7fn"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 8",
+              "url": "https://pixeldrain.net/api/file/fcLGk97i"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 9",
+              "url": "https://pixeldrain.net/api/file/nGYmQxzu"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 10",
+              "url": "https://pixeldrain.net/api/file/dB4vMAtB"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 11",
+              "url": "https://pixeldrain.net/api/file/nV4rQ7sL"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 12",
+              "url": "https://pixeldrain.net/api/file/r6gzt4cA"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 13",
+              "url": "https://pixeldrain.net/api/file/dv7Yumsd"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 14",
+              "url": "https://pixeldrain.net/api/file/E7K72bEH"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 15",
+              "url": "https://pixeldrain.net/api/file/BbCQWQk5"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 16",
+              "url": "https://pixeldrain.net/api/file/697W4bwR"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 17",
+              "url": "https://pixeldrain.net/api/file/KtEUzTyx"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 18",
+              "url": "https://pixeldrain.net/api/file/kjiSmDFF"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 19",
+              "url": "https://pixeldrain.net/api/file/dc739x4m"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 20",
+              "url": "https://pixeldrain.net/api/file/6SQNZ26R"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 21",
+              "url": "https://pixeldrain.net/api/file/cCRnNgE2"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 22",
+              "url": "https://pixeldrain.net/api/file/kr5XzBWY"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 23",
+              "url": "https://pixeldrain.net/api/file/y3ZebDkV"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 24",
+              "url": "https://pixeldrain.net/api/file/orqD5mcv"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 25",
+              "url": "https://pixeldrain.net/api/file/nvuvZAxP"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 26",
+              "url": "https://pixeldrain.net/api/file/P8i5wLdo"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 27",
+              "url": "https://pixeldrain.net/api/file/FiE27CXw"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 28",
+              "url": "https://pixeldrain.net/api/file/vsz5iagR"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 29",
+              "url": "https://pixeldrain.net/api/file/Z18yX8RD"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 30",
+              "url": "https://pixeldrain.net/api/file/9vr3Qdpf"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 31",
+              "url": "https://pixeldrain.net/api/file/foo1aJGm"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 32",
+              "url": "https://pixeldrain.net/api/file/ZChAjxsr"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 33",
+              "url": "https://pixeldrain.net/api/file/XEYmbePV"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 34",
+              "url": "https://pixeldrain.net/api/file/DB11niNj"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 35",
+              "url": "https://pixeldrain.net/api/file/mAu3HHtS"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 36",
+              "url": "https://pixeldrain.net/api/file/V9gdvPH3"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 37",
+              "url": "https://pixeldrain.net/api/file/zk4citsh"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 38",
+              "url": "https://pixeldrain.net/api/file/DAfHrU7k"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 39",
+              "url": "https://pixeldrain.net/api/file/QLPZLirn"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 40",
+              "url": "https://pixeldrain.net/api/file/UMk6VX39"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 41",
+              "url": "https://pixeldrain.net/api/file/x2hb7uLp"
+            },
+            {
+              "quality": "Pixeldrain:1080p - Video 42",
+              "url": "https://pixeldrain.net/api/file/Vw4mDr9X"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "warship-island-01-april-fools-2025",
+      "title": "Special: Warship Island 01 (April Fools 2025)",
+      "description": "",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 480p",
+            "url": "https://pixeldrain.net/api/file/YbxBPBye"
+          },
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/Aa4TE8QZ"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/KargNeE3"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "totalSeasons": 34,
+    "seasonsWithSubtitles": 33,
+    "seasonsWithDub": 12,
+    "seasonsWithExtended": 2,
+    "extractedAt": "2025-09-22T01:49:37.693Z",
+    "language": "es"
+  }
+}
