@@ -6,7 +6,7 @@
   "scripts": {
     "demo": "bun run index.ts",
     "scraper": "bun run src/scraper.ts",
-    "generate-stremio": "bun run generate-stremio.ts"
+    "generate-unified": "bun run generate-improved-stremio.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"

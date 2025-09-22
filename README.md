@@ -1,8 +1,19 @@
-# One Pace LATAM Scraper 🎬
+# One Pace Stremio LATAM - Addon Unificado �‍☠️
 
-Un scraper completo para extraer información de episodios de One Pace en español e inglés, con sistema inteligente de detección de cambios y API fácil de usar.
+Addon completo de Stremio para ver One Pace con subtítulos y doblaje en español e inglés. Incluye scraper avanzado, API para consultas y sistema de addon unificado organizado como una sola serie con temporadas por arcos.
 
-## 🚀 Características
+## 🎯 Características Principales
+
+### ✨ Addon Unificado para Stremio
+
+- **Una sola serie**: "One Pace" como serie principal unificada
+- **Temporadas organizadas**: Cada arco de One Pace es una temporada
+- **Múltiples formatos por episodio**: Subtítulos y doblaje disponibles para cada episodio
+- **Soporte multiidioma**: Español e inglés en el mismo proyecto
+- **Versiones extendidas**: Incluye episodios normales y extendidos cuando estén disponibles
+- **Calidades múltiples**: 480p, 720p, 1080p para cada formato
+
+### � Sistema de Scraping Avanzado
 
 - ✅ **Tipado completo con TypeScript**
 - 🌍 **Soporte para español e inglés**
@@ -12,12 +23,43 @@ Un scraper completo para extraer información de episodios de One Pace en españ
 - 🎙️ **Detección de subtítulos y doblaje**
 - 📁 **Archivos JSON optimizados**
 
-## 📦 Instalación
+## � Estructura de Temporadas
+
+Cada temporada corresponde a un arco de One Pace:
+
+- Temporada 1: Romance Dawn
+- Temporada 2: Orange Town
+- Temporada 3: Syrup Village
+- Temporada 5: Baratie
+- Y así sucesivamente...
+
+### 🎬 Formatos Disponibles por Episodio
+
+Para cada episodio tienes acceso a:
+
+- **Subtítulos en Español** (480p, 720p, 1080p)
+- **Doblaje en Español** (480p, 720p, 1080p)
+- **Subtítulos en Inglés** (480p, 720p, 1080p)
+- **Doblaje en Inglés** (480p, 720p, 1080p) - cuando esté disponible
+- **Versiones Extendidas** - para algunos arcos
+
+## �📦 Instalación y Configuración
+
+### Prerrequisitos
+
+```bash
+# Instalar Bun (recomendado)
+curl -fsSL https://bun.sh/install | bash
+
+# O usar Node.js/npm si prefieres
+```
+
+### Instalación
 
 ```bash
 # Clonar el repositorio
-git clone <tu-repo>
-cd one-pace-latam
+git clone https://github.com/CarmeloCampos/one-pace-stremio-latam.git
+cd one-pace-stremio-latam
 
 # Instalar dependencias
 bun install
@@ -26,9 +68,31 @@ bun install
 bun run index.ts
 ```
 
-## 🛠️ Uso
+## � Uso del Sistema
 
-### 1. Extraer datos (Scraper)
+### 1. Generar el Addon Unificado (Recomendado)
+
+```bash
+# Generar el addon mejorado unificado
+bun run generate-unified
+
+# Servir el addon localmente
+bun run serve-unified
+
+# Generar y servir en un solo comando
+bun run build-and-serve
+```
+
+### 2. Agregar a Stremio
+
+1. Ejecuta `bun run serve-unified`
+2. Abre Stremio
+3. Ve a la configuración (⚙️) → "Addons"
+4. Haz clic en "Add addon"
+5. Ingresa la URL: `http://localhost:3000/manifest.json`
+6. ¡Disfruta de One Pace!
+
+### 3. Extraer Datos (Scraper)
 
 ```bash
 # Extraer datos en ambos idiomas
@@ -41,61 +105,7 @@ El scraper:
 - Detecta automáticamente cambios y solo sobrescribe si es necesario
 - Genera archivos `data/one-pace-data-es.json` y `data/one-pace-data-en.json`
 
-### 2. Generar Addon Estático de Stremio
-
-```bash
-# Generar addon con datos en español (por defecto)
-bun run generate-stremio
-
-# Generar addon con datos en inglés
-bun run generate-stremio -- --lang en
-
-# Especificar archivo de entrada y salida personalizados
-bun run generate-stremio -- --input ./data/one-pace-data-es.json --output ./my-stremio-addon
-
-# Ver ayuda
-bun run generate-stremio -- --help
-```
-
-El generador de Stremio:
-
-- ✅ Crea un **addon estático** completo para Stremio
-- 📁 Genera estructura de archivos JSON compatible con Stremio
-- 🎬 Organiza episodios por temporadas (arcos de One Piece)
-- 🎙️ Soporte completo para subtítulos, doblaje y versiones extended
-- 🌐 Listo para hospedar en GitHub Pages, Vercel, Netlify, etc.
-
-#### Estructura del addon generado:
-
-```
-stremio-addon/
-├── manifest.json                    # Configuración del addon
-├── catalog/
-│   └── series/
-│       └── one-pace-catalog.json   # Catálogo de series
-├── meta/
-│   └── series/
-│       ├── onepace_romance-dawn.json  # Metadatos por arco
-│       ├── onepace_orange-town.json   
-│       └── ...
-└── stream/
-    └── series/
-        ├── onepace_romance-dawn_sub_1.json  # Streams por episodio
-        ├── onepace_romance-dawn_dub_1.json
-        └── ...
-```
-
-#### Instalación del addon en Stremio:
-
-1. **Hospedar el addon**: Sube la carpeta `stremio-addon` a GitHub Pages, Vercel, Netlify o cualquier hosting estático
-2. **Obtener URL**: Copia la URL del manifest: `https://tu-dominio.com/manifest.json`
-3. **Instalar en Stremio**:
-   - Abrir Stremio
-   - Ir a "Addons" → "Install addon via URL"
-   - Pegar la URL del manifest
-   - ¡Listo! Ya puedes ver One Pace desde Stremio
-
-### 3. Usar la API
+### 4. Usar la API Programática
 
 ```typescript
 import { OnePaceAPI } from "./src/api";
@@ -119,7 +129,7 @@ const results = api.searchSeasonsByTitle("arabasta", "es");
 const withDub = api.getSeasonsWithDub("es");
 ```
 
-### 3. Ejecutar demo
+### 5. Ejecutar Demo
 
 ```bash
 bun run index.ts
@@ -145,21 +155,42 @@ interface Season {
 }
 ```
 
-## 📁 Archivos del Proyecto
+## 📁 Estructura del Proyecto
 
 ```
-one-pace-latam/
-├── index.ts            # Demo simple
+one-pace-stremio-latam/
 ├── src/
-│   ├── api.ts          # API para consultar datos extraídos
-│   ├── scraper.ts      # Scraper principal con tipado completo
-│   └── one-cheerio.ts  # Función base de scraping
+│   ├── improved-stremio-generator.ts   # Generador unificado
+│   ├── api.ts                         # API para consultar datos
+│   ├── scraper.ts                     # Scraper principal
+│   └── one-cheerio.ts                 # Función base de scraping
 ├── data/
-│   ├── one-pace-data-es.json  # Datos en español
-│   └── one-pace-data-en.json  # Datos en inglés
-├── package.json        # Dependencias del proyecto
-├── tsconfig.json       # Configuración de TypeScript
-└── README.md           # Esta documentación
+│   ├── one-pace-data-es.json          # Datos en español
+│   └── one-pace-data-en.json          # Datos en inglés
+├── stremio-addon/                     # Addon generado
+│   ├── manifest.json
+│   ├── catalog/
+│   ├── meta/
+│   └── stream/
+├── generate-improved-stremio.ts       # Script generador unificado
+├── serve-unified-addon.ts             # Servidor del addon
+├── index.ts                           # Demo simple
+├── package.json                       # Dependencias y scripts
+├── tsconfig.json                      # Configuración TypeScript
+└── README.md                          # Esta documentación
+```
+
+## 🛠️ Scripts Disponibles
+
+```bash
+# Addon Unificado
+bun run generate-unified    # Generar addon unificado
+bun run serve-unified       # Servir addon localmente
+bun run build-and-serve     # Generar y servir en un comando
+
+# Scraping y Datos
+bun run scraper            # Ejecutar scraper completo
+bun run index.ts           # Demo básico
 ```
 
 ## 🎯 Funcionalidades de la API
@@ -177,7 +208,24 @@ one-pace-latam/
 - `getStats(lang)` - Estadísticas generales
 - `getMetadata(lang)` - Metadatos de extracción
 
-## 📈 Estadísticas Actuales
+## 🌐 URLs del Addon
+
+Una vez que el servidor esté corriendo:
+
+- **Manifest**: `http://localhost:3000/manifest.json`
+- **Catálogo**: `http://localhost:3000/catalog/series/one-pace-complete.json`
+- **Metadata**: `http://localhost:3000/meta/series/onepace_complete_series.json`
+- **Stream ejemplo**: `http://localhost:3000/stream/series/onepace_s01e01.json`
+
+## 📈 Estadísticas del Addon Unificado
+
+- **29 temporadas** (arcos de One Pace)
+- **Cientos de episodios** organizados correctamente
+- **Múltiples calidades**: 480p, 720p, 1080p
+- **4 formatos por episodio**: Sub ES, Dub ES, Sub EN, Dub EN
+- **12+ streams por episodio** típicamente
+
+### Estadísticas por Idioma
 
 | Métrica        | Español | Inglés |
 | -------------- | ------- | ------ |
@@ -213,13 +261,60 @@ Ciertas temporadas tienen versiones extendidas:
 - **País de Wa**: Sub Extended
 - Y más en inglés...
 
+## � Cómo Funciona el Sistema Unificado
+
+### Antes vs Después
+
+#### Sistema Anterior (Legacy)
+
+```
+🔴 Problema: Cada arco era una "serie" separada
+├── Romance Dawn (Serie independiente)
+├── Orange Town (Serie independiente)
+├── Syrup Village (Serie independiente)
+└── ... (35+ series separadas)
+```
+
+#### Sistema Nuevo (Unificado)
+
+```
+✅ Solución: Una sola serie con temporadas
+One Pace (Serie unificada)
+├── Temporada 1: Romance Dawn
+│   ├── Episodio 1 (Sub ES, Dub ES, Sub EN, Dub EN)
+│   ├── Episodio 2 (Sub ES, Dub ES, Sub EN, Dub EN)
+│   └── ...
+├── Temporada 2: Orange Town
+├── Temporada 3: Syrup Village
+└── ... (29 temporadas)
+```
+
+### Generación del Addon
+
+1. **Carga de datos**: Lee los archivos JSON de español e inglés
+2. **Unificación**: Combina ambos idiomas en una sola serie
+3. **Organización**: Agrupa por temporadas (arcos) y episodios
+4. **Generación de streams**: Crea múltiples opciones por episodio
+5. **Exportación**: Genera los archivos JSON para Stremio
+
+### Servidor del Addon
+
+- Sirve los archivos JSON generados
+- Maneja CORS para compatibilidad con Stremio
+- Proporciona endpoints para manifest, catálogos, metadata y streams
+
 ## 🚦 Comandos Rápidos
 
 ```bash
-# Demo básico
-bun run index.ts
+# Todo en uno (Recomendado)
+bun run build-and-serve
 
-# Scraper completo
+# Por pasos
+bun run generate-unified
+bun run serve-unified
+
+# Demo y scraping
+bun run index.ts
 bun run src/scraper.ts
 ```
 
@@ -250,6 +345,86 @@ async function example() {
 }
 ```
 
+## 🎥 Ejemplo de Episodio
+
+Un episodio típico incluye múltiples streams:
+
+```json
+{
+  "streams": [
+    {
+      "title": "1080p - Subtítulos Español",
+      "url": "https://pixeldrain.net/api/file/...",
+      "quality": "1080p",
+      "language": "es"
+    },
+    {
+      "title": "1080p - Doblaje Español",
+      "url": "https://pixeldrain.net/api/file/...",
+      "quality": "1080p",
+      "language": "es"
+    },
+    {
+      "title": "1080p - Subtítulos English",
+      "url": "https://pixeldrain.net/api/file/...",
+      "quality": "1080p",
+      "language": "en"
+    }
+  ]
+}
+```
+
+## 🚀 Despliegue en Producción
+
+Para uso en producción, puedes desplegar en:
+
+### Vercel
+
+```bash
+npm i -g vercel
+vercel
+```
+
+### Railway
+
+```bash
+railway login
+railway init
+railway up
+```
+
+### Netlify Functions
+
+Configura como función serverless usando el servidor Bun.
+
+### Cloudflare Workers
+
+Usa el archivo `cloudflare-worker.js` incluido.
+
+## 🎯 Beneficios del Sistema Unificado
+
+### Para el Usuario
+
+- ✅ **Más fácil de navegar**: Una sola serie vs 35+ series
+- ✅ **Mejor organización**: Temporadas lógicas por arcos
+- ✅ **Múltiples opciones**: Sub/Dub/Calidades en cada episodio
+- ✅ **Experiencia nativa**: Como ver cualquier serie en Stremio
+
+### Para el Desarrollador
+
+- ✅ **Código más limpio**: Un solo generador especializado
+- ✅ **Mantenimiento simplificado**: Una sola estructura unificada
+- ✅ **Sin legacy**: Sistema completamente modernizado
+- ✅ **Escalabilidad**: Fácil agregar nuevos arcos
+- ✅ **Multiidioma nativo**: Soporte built-in para múltiples idiomas
+
+## 🔄 Migración del Sistema Legacy
+
+- ✅ **Sistema unificado único**: Ya no se mantiene el sistema legacy
+- ✅ **Experiencia mejorada**: Una sola serie organizada por temporadas
+- ✅ **Datos existentes**: Usa los mismos archivos de datos del scraper
+- ✅ **Hosting flexible**: Funciona en cualquier servidor
+
 ## 🤝 Contribuir
 
 1. Fork del proyecto
@@ -258,24 +433,35 @@ async function example() {
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abrir Pull Request
 
+## 📝 Changelog
+
+### v2.0.0 - Addon Unificado ✨
+
+- ✨ Una sola serie "One Pace" con temporadas por arcos
+- 🌍 Soporte multiidioma (español/inglés)
+- 🎬 Múltiples formatos por episodio
+- 📱 Interfaz mejorada en Stremio
+- 🚀 Servidor optimizado
+- 🗑️ Sistema legacy eliminado - solo addon unificado
+
+## 🙏 Créditos
+
+- **One Pace Team**: Por el increíble trabajo de re-edición
+- **Eiichiro Oda**: Creador de One Piece
+- **Stremio**: Por la plataforma de streaming
+
 ## ⚖️ Licencia
 
-Este proyecto es para uso educativo y personal. Respeta los términos de uso de One Pace.
+Este proyecto es un fan project y no tiene afiliación oficial con One Piece o Toei Animation. Es para uso educativo y personal.
 
 ---
 
-**¡Disfruta navegando por el mundo de One Pace! 🏴‍☠️**m
+**¡Disfruta navegando por el mundo de One Pace! 🏴‍☠️**
 
-To install dependencies:
+### Quick Start
 
 ```bash
 bun install
+bun run build-and-serve
+# Agrega http://localhost:3000/manifest.json a Stremio
 ```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.22. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
