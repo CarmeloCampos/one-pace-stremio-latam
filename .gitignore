@@ -1,10 +1,14 @@
 # dependencies (bun install)
 node_modules
+bun.lockb
 
 # output
 out
 dist
 *.tgz
+
+# Generated addon (add to separate repo for hosting)
+stremio-addon/
 
 # code coverage
 coverage

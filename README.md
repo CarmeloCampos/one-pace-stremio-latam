@@ -41,7 +41,61 @@ El scraper:
 - Detecta automáticamente cambios y solo sobrescribe si es necesario
 - Genera archivos `data/one-pace-data-es.json` y `data/one-pace-data-en.json`
 
-### 2. Usar la API
+### 2. Generar Addon Estático de Stremio
+
+```bash
+# Generar addon con datos en español (por defecto)
+bun run generate-stremio
+
+# Generar addon con datos en inglés
+bun run generate-stremio -- --lang en
+
+# Especificar archivo de entrada y salida personalizados
+bun run generate-stremio -- --input ./data/one-pace-data-es.json --output ./my-stremio-addon
+
+# Ver ayuda
+bun run generate-stremio -- --help
+```
+
+El generador de Stremio:
+
+- ✅ Crea un **addon estático** completo para Stremio
+- 📁 Genera estructura de archivos JSON compatible con Stremio
+- 🎬 Organiza episodios por temporadas (arcos de One Piece)
+- 🎙️ Soporte completo para subtítulos, doblaje y versiones extended
+- 🌐 Listo para hospedar en GitHub Pages, Vercel, Netlify, etc.
+
+#### Estructura del addon generado:
+
+```
+stremio-addon/
+├── manifest.json                    # Configuración del addon
+├── catalog/
+│   └── series/
+│       └── one-pace-catalog.json   # Catálogo de series
+├── meta/
+│   └── series/
+│       ├── onepace_romance-dawn.json  # Metadatos por arco
+│       ├── onepace_orange-town.json   
+│       └── ...
+└── stream/
+    └── series/
+        ├── onepace_romance-dawn_sub_1.json  # Streams por episodio
+        ├── onepace_romance-dawn_dub_1.json
+        └── ...
+```
+
+#### Instalación del addon en Stremio:
+
+1. **Hospedar el addon**: Sube la carpeta `stremio-addon` a GitHub Pages, Vercel, Netlify o cualquier hosting estático
+2. **Obtener URL**: Copia la URL del manifest: `https://tu-dominio.com/manifest.json`
+3. **Instalar en Stremio**:
+   - Abrir Stremio
+   - Ir a "Addons" → "Install addon via URL"
+   - Pegar la URL del manifest
+   - ¡Listo! Ya puedes ver One Pace desde Stremio
+
+### 3. Usar la API
 
 ```typescript
 import { OnePaceAPI } from "./src/api";
