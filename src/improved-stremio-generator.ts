@@ -59,14 +59,9 @@ interface StremioStreams {
 export class ImprovedStremioAddonGenerator {
   private readonly addonId = "one-pace-unified";
   private readonly outputDir: string;
-  private readonly _usePosters: boolean;
 
-  constructor(
-    outputDir: string = "./stremio-addon",
-    usePosters: boolean = true
-  ) {
+  constructor(outputDir: string = "./stremio-addon") {
     this.outputDir = outputDir;
-    this._usePosters = usePosters;
   }
 
   async generateUnifiedAddon(
@@ -119,7 +114,7 @@ export class ImprovedStremioAddonGenerator {
   private async generateUnifiedManifest(): Promise<void> {
     const manifest: StremioManifest = {
       id: this.addonId,
-      version: "2.2.0",
+      version: "2.2.1",
       name: "One Pace - Complete Series",
       description:
         "Complete One Pace series with all arcs as seasons. Includes Spanish and English subtitles/dubbing.",
