@@ -134,12 +134,6 @@ const results = api.searchSeasonsByTitle("arabasta", "es");
 const withDub = api.getSeasonsWithDub("es");
 ```
 
-### 5. Ejecutar Demo
-
-```bash
-bun run demo
-```
-
 ## 📊 Estructura de Datos
 
 ```typescript
@@ -191,9 +185,12 @@ one-pace-stremio-latam/
 
 ```bash
 # Scripts principales
-bun run demo               # Ejecutar demo con estadísticas
+```bash
+# Scripts principales de desarrollo
+bun run demo              # Ejecutar demo de estadísticas
 bun run scraper           # Ejecutar scraper inteligente completo
-bun run generate-unified  # Generar addon unificado para Stremio
+bun run generate-unified  # Generar addon unificado de Stremio
+```
 
 # El proyecto se despliega automáticamente con GitHub Actions
 # Cada push a main actualiza https://one-pace-latam-stremio.pages.dev/
@@ -334,9 +331,15 @@ One Pace (Serie unificada)
 # URL: https://one-pace-latam-stremio.pages.dev/manifest.json
 
 # Desarrollo local
-bun run scraper           # Actualizar datos
-bun run generate-unified  # Generar addon
-bun run demo             # Ver estadísticas y ejemplos
+```bash
+# Uso en producción (recomendado)
+# Añadir addon en Stremio: https://one-pace-latam-stremio.pages.dev/manifest.json
+
+# Desarrollo local
+bun run scraper           # Extraer o actualizar datos
+bun run generate-unified  # Generar addon unificado
+bun run demo              # Mostrar estadísticas y ejemplos
+```
 ```
 
 ## 📝 Ejemplo de Uso Completo
@@ -601,20 +604,20 @@ https://one-pace-latam-stremio.pages.dev/manifest.json
 
 ## 🚀 Quick Start
 
-### Para Usuarios (Recomendado)
-```
-1. Abre Stremio
-2. Addons → Add addon  
-3. Pega: https://one-pace-latam-stremio.pages.dev/manifest.json
-4. ¡Disfruta One Pace completo!
-```
+### Usuarios
+1. Abre Stremio.
+2. Ve a Configuración (⚙️) → Addons.
+3. Haz clic en "Add addon".
+4. Pega la URL: `https://one-pace-latam-stremio.pages.dev/manifest.json`.
+5. ¡Disfruta One Pace completo!
 
-### Para Desarrolladores
+### Desarrolladores
 ```bash
 git clone https://github.com/CarmeloCampos/one-pace-stremio-latam.git
 cd one-pace-stremio-latam
 bun install
-bun run demo  # Ver estadísticas
-bun run scraper  # Actualizar datos
-bun run generate-unified  # Generar addon
+
+bun run demo              # Ejecutar demo de estadísticas
+bun run scraper           # Extraer o actualizar datos
+bun run generate-unified  # Generar addon unificado
 ```
