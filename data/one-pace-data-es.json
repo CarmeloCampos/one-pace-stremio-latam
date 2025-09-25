@@ -1212,6 +1212,18 @@
           {
             "quality": "Pixeldrain:1080p - Video 3",
             "url": "https://pixeldrain.net/api/file/uFjjKB4K"
+          },
+          {
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/UxJLs87G",
+            "isDubbed": false,
+            "isExtended": false
+          },
+          {
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/cGnc9LWo",
+            "isDubbed": false,
+            "isExtended": false
           }
         ]
       },
@@ -1252,6 +1264,18 @@
           {
             "quality": "Pixeldrain:1080p - Video 3",
             "url": "https://pixeldrain.net/api/file/3aU3erZG"
+          },
+          {
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/UxJLs87G",
+            "isDubbed": true,
+            "isExtended": false
+          },
+          {
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/cGnc9LWo",
+            "isDubbed": true,
+            "isExtended": false
           }
         ]
       }
@@ -2011,36 +2035,50 @@
     {
       "id": "long-ring-long-land",
       "title": "Long Ring Long Land",
-      "description": "Arco Long Ring Long Land - Procesado desde arcos.json",
+      "description": "One Pace - Long Ring Long Land",
       "subtitle": {
         "qualities": [
           {
-            "quality": "Episodio 1",
-            "url": "https://pixeldrain.net/api/file/YqRwjTE5"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/YqRwjTE5",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 2",
-            "url": "https://pixeldrain.net/api/file/QDcHPF2p"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/QDcHPF2p",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 3",
-            "url": "https://pixeldrain.net/api/file/whCnB5nS"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/whCnB5nS",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 4",
-            "url": "https://pixeldrain.net/api/file/sSjCtXvK"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/sSjCtXvK",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 5",
-            "url": "https://pixeldrain.net/api/file/JoDoaV6Q"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/JoDoaV6Q",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 6",
-            "url": "https://pixeldrain.net/api/file/9PWrqzJ6"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/9PWrqzJ6",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 7",
-            "url": "https://pixeldrain.net/api/file/kTS9pH3k"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/kTS9pH3k",
+            "isDubbed": false,
+            "isExtended": false
           }
         ]
       }
@@ -2306,28 +2344,38 @@
     {
       "id": "post-enies-lobby",
       "title": "Post-Enies Lobby",
-      "description": "Arco Post-Enies Lobby - Procesado desde arcos.json",
+      "description": "One Pace - Post-Enies Lobby",
       "subtitle": {
         "qualities": [
           {
-            "quality": "Episodio 1",
-            "url": "https://pixeldrain.net/api/file/vaUt9iS2"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/vaUt9iS2",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 2",
-            "url": "https://pixeldrain.net/api/file/2Jz6Xeke"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/2Jz6Xeke",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 3",
-            "url": "https://pixeldrain.net/api/file/C8YDX2vu"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/C8YDX2vu",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 4",
-            "url": "https://pixeldrain.net/api/file/u91v2KnX"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/u91v2KnX",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 5",
-            "url": "https://pixeldrain.net/api/file/cHAnJxZ8"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/cHAnJxZ8",
+            "isDubbed": false,
+            "isExtended": false
           }
         ]
       }
@@ -4468,268 +4516,398 @@
     {
       "id": "onigashima-y-egghead",
       "title": "Onigashima y Egghead",
-      "description": "Arco Onigashima y Egghead - Procesado desde arcos.json",
+      "description": "One Pace - Onigashima y Egghead",
       "subtitle": {
         "qualities": [
           {
-            "quality": "Episodio 1",
-            "url": "https://pixeldrain.net/api/file/MYpEeyuv"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/MYpEeyuv",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 2",
-            "url": "https://pixeldrain.net/api/file/Rgd3iwyh"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Rgd3iwyh",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 3",
-            "url": "https://pixeldrain.net/api/file/hUNd344R"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/hUNd344R",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 4",
-            "url": "https://pixeldrain.net/api/file/WUZRwnNt"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/WUZRwnNt",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 5",
-            "url": "https://pixeldrain.net/api/file/QTCpZVxd"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/QTCpZVxd",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 6",
-            "url": "https://pixeldrain.net/api/file/iKwp6RkX"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/iKwp6RkX",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 7",
-            "url": "https://pixeldrain.net/api/file/uE75XyYV"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/uE75XyYV",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 8",
-            "url": "https://pixeldrain.net/api/file/WGznjNQH"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/WGznjNQH",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 9",
-            "url": "https://pixeldrain.net/api/file/9TJZYzgN"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/9TJZYzgN",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 10",
-            "url": "https://pixeldrain.net/api/file/iYeQwGA7"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/iYeQwGA7",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 11",
-            "url": "https://pixeldrain.net/api/file/oAtQ1UnR"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/oAtQ1UnR",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 12",
-            "url": "https://pixeldrain.net/api/file/mLxQjxwB"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/mLxQjxwB",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 13",
-            "url": "https://pixeldrain.net/api/file/47uQGGqZ"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/47uQGGqZ",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 14",
-            "url": "https://pixeldrain.net/api/file/7egdfczm"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/7egdfczm",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 15",
-            "url": "https://pixeldrain.net/api/file/7TULC2jX"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/7TULC2jX",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 16",
-            "url": "https://pixeldrain.net/api/file/ZxPE8cQ2"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/ZxPE8cQ2",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 17",
-            "url": "https://pixeldrain.net/api/file/JjuP33pb"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/JjuP33pb",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 18",
-            "url": "https://pixeldrain.net/api/file/JGHvkqrK"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/JGHvkqrK",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 19",
-            "url": "https://pixeldrain.net/api/file/3TGjq3aE"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/3TGjq3aE",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 20",
-            "url": "https://pixeldrain.net/api/file/ZAfSRwbr"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/ZAfSRwbr",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 21",
-            "url": "https://pixeldrain.net/api/file/MCBWhMhu"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/MCBWhMhu",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 22",
-            "url": "https://pixeldrain.net/api/file/Gz3HwqfU"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Gz3HwqfU",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 23",
-            "url": "https://pixeldrain.net/api/file/FQpUds9p"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/FQpUds9p",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 24",
-            "url": "https://pixeldrain.net/api/file/g1rE54GB"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/g1rE54GB",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 25",
-            "url": "https://pixeldrain.net/api/file/BHDBLiss"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/BHDBLiss",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 26",
-            "url": "https://pixeldrain.net/api/file/3qtwNuNE"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/3qtwNuNE",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 27",
-            "url": "https://pixeldrain.net/api/file/Tq1M9gci"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Tq1M9gci",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 28",
-            "url": "https://pixeldrain.net/api/file/F4uibeNr"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/F4uibeNr",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 29",
-            "url": "https://pixeldrain.net/api/file/Sn72yJbX"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Sn72yJbX",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 30",
-            "url": "https://pixeldrain.net/api/file/SyYR3DX3"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/SyYR3DX3",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 31",
-            "url": "https://pixeldrain.net/api/file/dtEEmm9y"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/dtEEmm9y",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 32",
-            "url": "https://pixeldrain.net/api/file/Z7qwxX83"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Z7qwxX83",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 33",
-            "url": "https://pixeldrain.net/api/file/QxALZgTt"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/QxALZgTt",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 34",
-            "url": "https://pixeldrain.net/api/file/zCrWgEvC"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/zCrWgEvC",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 35",
-            "url": "https://pixeldrain.net/api/file/TvjCNwZ5"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/TvjCNwZ5",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 36",
-            "url": "https://pixeldrain.net/api/file/KP7VxtEn"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/KP7VxtEn",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 37",
-            "url": "https://pixeldrain.net/api/file/oxCewJ2P"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/oxCewJ2P",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 38",
-            "url": "https://pixeldrain.net/api/file/TZUVo2jH"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/TZUVo2jH",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 39",
-            "url": "https://pixeldrain.net/api/file/EctZnSU4"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/EctZnSU4",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 40",
-            "url": "https://pixeldrain.net/api/file/3DDimbdi"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/3DDimbdi",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 41",
-            "url": "https://pixeldrain.net/api/file/wxUbTSXJ"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/wxUbTSXJ",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 42",
-            "url": "https://pixeldrain.net/api/file/QwNNS1JY"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/QwNNS1JY",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 43",
-            "url": "https://pixeldrain.net/api/file/RL8Bj5du"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/RL8Bj5du",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 44",
-            "url": "https://pixeldrain.net/api/file/t9CRnKnr"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/t9CRnKnr",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 45",
-            "url": "https://pixeldrain.net/api/file/ag4JUKuN"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/ag4JUKuN",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 46",
-            "url": "https://pixeldrain.net/api/file/s1v9DsKy"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/s1v9DsKy",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 47",
-            "url": "https://pixeldrain.net/api/file/kkg1S4n1"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/kkg1S4n1",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 48",
-            "url": "https://pixeldrain.net/api/file/JV8STUQf"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/JV8STUQf",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 49",
-            "url": "https://pixeldrain.net/api/file/YYRrDdZo"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/YYRrDdZo",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 50",
-            "url": "https://pixeldrain.net/api/file/Xb2L64WR"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Xb2L64WR",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 51",
-            "url": "https://pixeldrain.net/api/file/YyJJvtUG"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/YyJJvtUG",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 52",
-            "url": "https://pixeldrain.net/api/file/bhA9wjHq"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/bhA9wjHq",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 53",
-            "url": "https://pixeldrain.net/api/file/keycLWS7"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/keycLWS7",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 54",
-            "url": "https://pixeldrain.net/api/file/RQnGW4b2"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/RQnGW4b2",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 55",
-            "url": "https://pixeldrain.net/api/file/Tq8tstFe"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Tq8tstFe",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 56",
-            "url": "https://pixeldrain.net/api/file/duT7ohBP"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/duT7ohBP",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 57",
-            "url": "https://pixeldrain.net/api/file/gdW8Vnis"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/gdW8Vnis",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 58",
-            "url": "https://pixeldrain.net/api/file/a3Hyb3F3"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/a3Hyb3F3",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 59",
-            "url": "https://pixeldrain.net/api/file/Pn3PQrqr"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/Pn3PQrqr",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 60",
-            "url": "https://pixeldrain.net/api/file/P8k2SVP3"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/P8k2SVP3",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 61",
-            "url": "https://pixeldrain.net/api/file/hp6n6iBD"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/hp6n6iBD",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 62",
-            "url": "https://pixeldrain.net/api/file/r1sD1XbY"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/r1sD1XbY",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 63",
-            "url": "https://pixeldrain.net/api/file/qzsjVRJ9"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/qzsjVRJ9",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 64",
-            "url": "https://pixeldrain.net/api/file/CiBwHmDT"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/CiBwHmDT",
+            "isDubbed": false,
+            "isExtended": false
           },
           {
-            "quality": "Episodio 65",
-            "url": "https://pixeldrain.net/api/file/ABsTcGZ8"
+            "quality": "480p",
+            "url": "https://pixeldrain.net/api/file/ABsTcGZ8",
+            "isDubbed": false,
+            "isExtended": false
           }
         ]
       }
@@ -4761,7 +4939,7 @@
     "seasonsWithSubtitles": 36,
     "seasonsWithDub": 12,
     "seasonsWithExtended": 2,
-    "extractedAt": "2025-09-25T22:13:32.101Z",
+    "extractedAt": "2025-09-25T22:31:33.338Z",
     "language": "es",
     "unifiedWithArcos": true,
     "arcosFromJson": 3,

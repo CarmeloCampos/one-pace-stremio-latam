@@ -6,6 +6,7 @@ import * as crypto from "crypto";
 interface ArcoJson {
   name: string;
   link: string;
+  additionalEpisodes?: string[];
   notes?: string;
 }
 
@@ -174,6 +175,14 @@ async function getPixeldrainFiles(folderId: string): Promise<string[]> {
 }
 
 async function processPixeldrainUrl(url: string): Promise<string[]> {
+  // Si es una URL de archivo directo (pixeldrain.net/u/ o /api/file/), devolverla tal como está
+  if (
+    url.includes("pixeldrain.net/u/") ||
+    url.includes("pixeldrain.net/api/file/")
+  ) {
+    return [url];
+  }
+
   const folderId = extractPixeldrainId(url);
 
   if (!folderId) {
@@ -188,19 +197,112 @@ async function processPixeldrainUrl(url: string): Promise<string[]> {
 async function createSeasonFromArco(arco: ArcoJson): Promise<Season> {
   console.log(`🔄 Procesando arco desde JSON: ${arco.name}`);
 
-  const videoUrls = await processPixeldrainUrl(arco.link);
+  // Procesar URL principal
+  const mainVideoUrls = await processPixeldrainUrl(arco.link);
 
-  const qualities: Quality[] = videoUrls.map((url, index) => ({
-    quality: videoUrls.length > 1 ? `Episodio ${index + 1}` : "720p",
+  // Procesar episodios adicionales si existen
+  const additionalVideoUrls: string[] = [];
+
+  if (arco.additionalEpisodes && arco.additionalEpisodes.length > 0) {
+    console.log(
+      `🔍 Procesando ${arco.additionalEpisodes.length} episodios adicionales para ${arco.name}`
+    );
+
+    for (const url of arco.additionalEpisodes) {
+      const videos = await processPixeldrainUrl(url);
+      additionalVideoUrls.push(...videos);
+    }
+  }
+
+  // Combinar todas las URLs de video en orden
+  const allVideoUrls = [...mainVideoUrls, ...additionalVideoUrls];
+
+  const qualities: Quality[] = allVideoUrls.map((url) => ({
+    quality: "480p",
     url: url,
+    isDubbed: false,
+    isExtended: false,
   }));
 
+  console.log(
+    `✅ ${arco.name}: ${mainVideoUrls.length} episodios principales + ${additionalVideoUrls.length} adicionales = ${allVideoUrls.length} total`
+  );
+
   return {
-    id: normalizeTitle(arco.name),
+    id: getCanonicalId(arco.name),
     title: arco.name,
-    description: arco.notes || `Arco ${arco.name} - Procesado desde arcos.json`,
-    subtitle: { qualities },
+    description: `One Pace - ${arco.name}`,
+    subtitle: { qualities: qualities },
   };
+}
+
+// Función para combinar datos del scraper con episodios adicionales
+async function enhanceSeasonWithAdditionalEpisodes(
+  scraperSeason: Season,
+  arco: ArcoJson
+): Promise<Season> {
+  console.log(`🔄 Mejorando temporada del scraper: ${arco.name}`);
+
+  // Procesar episodios adicionales
+  const additionalVideoUrls: string[] = [];
+
+  if (arco.additionalEpisodes && arco.additionalEpisodes.length > 0) {
+    console.log(
+      `🔍 Procesando ${arco.additionalEpisodes.length} episodios adicionales para ${arco.name}`
+    );
+
+    for (const url of arco.additionalEpisodes) {
+      const videos = await processPixeldrainUrl(url);
+      additionalVideoUrls.push(...videos);
+    }
+  }
+
+  // Crear las nuevas qualities con los episodios adicionales
+  const additionalQualities: Quality[] = additionalVideoUrls.map((url) => ({
+    quality: "480p",
+    url: url,
+    isDubbed: false,
+    isExtended: false,
+  }));
+
+  // Combinar las qualities existentes con las adicionales
+  const enhancedSeason: Season = {
+    ...scraperSeason,
+  };
+
+  // Agregar episodios adicionales a todas las calidades disponibles
+  if (enhancedSeason.subtitle) {
+    enhancedSeason.subtitle.qualities.push(...additionalQualities);
+  }
+
+  if (enhancedSeason.dub) {
+    // Para doblaje, usar las mismas URLs pero marcadas como dub
+    const dubbedAdditionalQualities = additionalQualities.map((q) => ({
+      ...q,
+      isDubbed: true,
+    }));
+    enhancedSeason.dub.qualities.push(...dubbedAdditionalQualities);
+  }
+
+  if (enhancedSeason.extended?.subtitle) {
+    enhancedSeason.extended.subtitle.qualities.push(...additionalQualities);
+  }
+
+  if (enhancedSeason.extended?.dub) {
+    const dubbedAdditionalQualities = additionalQualities.map((q) => ({
+      ...q,
+      isDubbed: true,
+    }));
+    enhancedSeason.extended.dub.qualities.push(...dubbedAdditionalQualities);
+  }
+
+  const originalCount = scraperSeason.subtitle?.qualities.length || 0;
+  const totalCount = enhancedSeason.subtitle?.qualities.length || 0;
+  console.log(
+    `✅ ${arco.name}: ${originalCount} episodios originales + ${additionalVideoUrls.length} adicionales = ${totalCount} total`
+  );
+
+  return enhancedSeason;
 }
 
 // Función para extraer datos de un idioma específico
@@ -422,49 +524,75 @@ async function unifyWithArcosJson(
     }
   }
 
-  // Procesar arcos faltantes y crear mapa para insertarlos en el orden correcto
-  const missingArcosMap = new Map<string, Season>();
+  // Crear mapa para todos los arcos procesados (faltantes + mejorados)
+  const processedArcosMap = new Map<string, Season>();
+  let arcosProcessed = 0;
 
-  if (missingArcos.length > 0) {
-    console.log(`\n🔄 Procesando ${missingArcos.length} arcos faltantes...`);
+  console.log(`\n🔄 Procesando arcos desde JSON...`);
 
-    for (const arco of missingArcos) {
+  for (const arco of arcosJson) {
+    const canonicalId = getCanonicalId(arco.name);
+
+    // Verificar si este arco tiene episodios adicionales o no está en el scraper
+    const hasAdditionalEpisodes =
+      arco.additionalEpisodes && arco.additionalEpisodes.length > 0;
+    const existsInScraper = scraperMap.has(canonicalId);
+
+    if (!existsInScraper) {
+      // Arco faltante - crear desde JSON
       try {
         const season = await createSeasonFromArco(arco);
-        const canonicalId = getCanonicalId(arco.name);
-        missingArcosMap.set(canonicalId, season);
-        console.log(`✅ Procesado: ${arco.name}`);
+        processedArcosMap.set(canonicalId, season);
+        arcosProcessed++;
+        console.log(`✅ Arco faltante procesado: ${arco.name}`);
       } catch (error) {
-        console.error(`❌ Error procesando ${arco.name}:`, error);
+        console.error(`❌ Error procesando arco faltante ${arco.name}:`, error);
+      }
+    } else if (hasAdditionalEpisodes) {
+      // Arco existe pero tiene episodios adicionales - mejorarlo
+      try {
+        const scraperSeason = scraperMap.get(canonicalId)!;
+        const enhancedSeason = await enhanceSeasonWithAdditionalEpisodes(
+          scraperSeason,
+          arco
+        );
+        processedArcosMap.set(canonicalId, enhancedSeason);
+        arcosProcessed++;
+        console.log(`🔄 Arco mejorado con episodios adicionales: ${arco.name}`);
+      } catch (error) {
+        console.error(`❌ Error mejorando ${arco.name}:`, error);
       }
     }
-
-    // Reconstruir la lista final insertando los arcos faltantes en orden
-    const orderedSeasons: Season[] = [];
-
-    for (const arco of arcosJson) {
-      const canonicalId = getCanonicalId(arco.name);
-
-      if (scraperMap.has(canonicalId)) {
-        // Usar versión del scraper
-        orderedSeasons.push(scraperMap.get(canonicalId)!);
-      } else if (missingArcosMap.has(canonicalId)) {
-        // Usar versión procesada desde JSON
-        orderedSeasons.push(missingArcosMap.get(canonicalId)!);
-        console.log(`🔄 Insertado en orden: ${arco.name}`);
-      }
-    }
-
-    // Reemplazar la lista de finalSeasons
-    finalSeasons.length = 0;
-    finalSeasons.push(...orderedSeasons);
   }
 
-  // Agregar cualquier temporada del scraper que no esté en arcos.json al final
+  // Reconstruir la lista final respetando el orden de arcos.json
+  const orderedSeasons: Season[] = [];
+
+  for (const arco of arcosJson) {
+    const canonicalId = getCanonicalId(arco.name);
+
+    if (processedArcosMap.has(canonicalId)) {
+      // Usar versión procesada desde JSON (faltante o mejorada)
+      orderedSeasons.push(processedArcosMap.get(canonicalId)!);
+    } else if (scraperMap.has(canonicalId)) {
+      // Usar versión del scraper
+      orderedSeasons.push(scraperMap.get(canonicalId)!);
+    }
+  }
+
+  // Reemplazar finalSeasons con la lista ordenada
+  finalSeasons.length = 0;
+  finalSeasons.push(...orderedSeasons);
+
+  // Identificar temporadas del scraper que no están en arcos.json para agregarlas al final
+  const arcosJsonIds = new Set(
+    arcosJson.map((arco) => getCanonicalId(arco.name))
+  );
   const unusedScraperSeasons: Season[] = [];
+
   for (const season of scraperData.seasons) {
     const canonicalId = getCanonicalId(season.title);
-    if (!processedArcos.includes(canonicalId)) {
+    if (!arcosJsonIds.has(canonicalId)) {
       unusedScraperSeasons.push(season);
     }
   }

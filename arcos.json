@@ -46,7 +46,11 @@
   {
     "name": "Little Garden",
     "link": "https://pixeldrain.net/l/EDvKHLUP",
-    "notes": "Incompleto - Ver también: https://drive.google.com/drive/folders/1yL7uoJoEK42hU0X7aM43GWoLTkASoqxX"
+    "additionalEpisodes": [
+      "https://pixeldrain.net/api/file/UxJLs87G",
+      "https://pixeldrain.net/api/file/cGnc9LWo"
+    ],
+    "notes": "Episodios 4 y 5 agregados por separado"
   },
   {
     "name": "Isla de Drum",
