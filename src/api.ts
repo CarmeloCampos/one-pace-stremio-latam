@@ -166,28 +166,3 @@ export class OnePaceAPI {
     return data.metadata;
   }
 }
-
-// Ejemplo de uso
-async function example() {
-  const api = new OnePaceAPI();
-
-  // Cargar datos en español
-  await api.loadData("es");
-
-  // Obtener estadísticas
-  console.log("Estadísticas ES:", api.getStats("es"));
-
-  // Buscar una temporada específica
-  const aromaDawn = api.getSeasonById("romance-dawn", "es");
-  console.log("Romance Dawn:", aromaDawn);
-
-  // Buscar temporadas por título
-  const arabasta = api.searchSeasonsByTitle("arabasta", "es");
-  console.log("Resultados Arabasta:", arabasta);
-
-  // Obtener temporadas con doblaje
-  const withDub = api.getSeasonsWithDub("es");
-  console.log(`Temporadas con doblaje: ${withDub.length}`);
-}
-
-export { example };

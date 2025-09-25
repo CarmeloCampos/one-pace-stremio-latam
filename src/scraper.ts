@@ -2,6 +2,13 @@ import { oneCheerio } from "./one-cheerio";
 import * as fs from "fs";
 import * as crypto from "crypto";
 
+// Interface para el archivo arcos.json
+interface ArcoJson {
+  name: string;
+  link: string;
+  notes?: string;
+}
+
 // Interfaces para Pixeldrain API
 interface PixeldrainFile {
   id: string;
@@ -70,6 +77,51 @@ interface OnePaceData {
   };
 }
 
+// Funciones para cargar arcos del JSON
+function loadArcosJson(): ArcoJson[] {
+  try {
+    const arcosPath = "./arcos.json";
+    if (!fs.existsSync(arcosPath)) {
+      console.warn("⚠️ Archivo arcos.json no encontrado");
+      return [];
+    }
+
+    const content = fs.readFileSync(arcosPath, "utf-8");
+    const arcos = JSON.parse(content) as ArcoJson[];
+    console.log(`📋 Cargados ${arcos.length} arcos desde arcos.json`);
+    return arcos;
+  } catch (error) {
+    console.error("❌ Error cargando arcos.json:", error);
+    return [];
+  }
+}
+
+// Mapeo de nombres para evitar duplicaciones
+const NAME_MAPPING: Record<string, string> = {
+  // Versiones alternativas que deben mapearse a la misma ID canónica
+  "las-aventuras-de-los-piratas-de-buggy": "mini-historia-de-buggy",
+  "el-diario-de-la-lucha-de-koby-meppo": "mini-historia-de-koby-y-meppo",
+  "archipilago-sabaody": "sabaody", // Sin acento normalizado
+  "si-fueras-a-salir-de-viaje-las-aventuras-de-los-sombrero-de-paja":
+    "mini-historia-de-los-mugiwara",
+  "whole-cake-island": "whole-cake",
+  "pas-de-wa": "wano", // Sin acento normalizado
+  "special-warship-island-01-april-fools-2025":
+    "warship-island-01-april-fools-2025",
+};
+function normalizeTitle(title: string): string {
+  return title
+    .toLowerCase()
+    .trim()
+    .replace(/[-\s]+/g, "-")
+    .replace(/[^\w-]/g, "");
+}
+
+function getCanonicalId(title: string): string {
+  const normalized = normalizeTitle(title);
+  return NAME_MAPPING[normalized] || normalized;
+}
+
 // Funciones para manejar Pixeldrain
 function extractPixeldrainId(url: string): string | null {
   // Admite tanto /u/ como /l/ para carpetas de Pixeldrain
@@ -130,6 +182,25 @@ async function processPixeldrainUrl(url: string): Promise<string[]> {
   }
 
   return await getPixeldrainFiles(folderId);
+}
+
+// Función para crear temporada desde arco JSON
+async function createSeasonFromArco(arco: ArcoJson): Promise<Season> {
+  console.log(`🔄 Procesando arco desde JSON: ${arco.name}`);
+
+  const videoUrls = await processPixeldrainUrl(arco.link);
+
+  const qualities: Quality[] = videoUrls.map((url, index) => ({
+    quality: videoUrls.length > 1 ? `Episodio ${index + 1}` : "720p",
+    url: url,
+  }));
+
+  return {
+    id: normalizeTitle(arco.name),
+    title: arco.name,
+    description: arco.notes || `Arco ${arco.name} - Procesado desde arcos.json`,
+    subtitle: { qualities },
+  };
 }
 
 // Función para extraer datos de un idioma específico
@@ -306,16 +377,155 @@ async function saveDataWithSmartSystem(
   }
 }
 
+// Función para unificar datos del scraper con arcos.json respetando el orden correcto
+async function unifyWithArcosJson(
+  scraperData: OnePaceData
+): Promise<OnePaceData> {
+  const arcosJson = loadArcosJson();
+  if (arcosJson.length === 0) {
+    return scraperData; // Si no hay arcos JSON, devolver datos originales
+  }
+
+  console.log(
+    `\n🔄 Unificando datos con arcos.json respetando orden lógico...`
+  );
+
+  // Crear un mapa de temporadas del scraper por ID canónico
+  const scraperMap = new Map<string, Season>();
+  for (const season of scraperData.seasons) {
+    const canonicalId = getCanonicalId(season.title);
+    scraperMap.set(canonicalId, season);
+  }
+
+  // Crear lista final respetando el orden de arcos.json
+  const finalSeasons: Season[] = [];
+  const processedArcos: string[] = [];
+  const missingArcos: ArcoJson[] = [];
+
+  console.log(`📊 Arcos en JSON (orden canónico): ${arcosJson.length}`);
+  console.log(`📊 Arcos en scraper: ${scraperData.seasons.length}`);
+
+  // Procesar cada arco en el orden de arcos.json
+  for (const arco of arcosJson) {
+    const canonicalId = getCanonicalId(arco.name);
+    processedArcos.push(canonicalId);
+
+    if (scraperMap.has(canonicalId)) {
+      // El arco existe en el scraper, usar esa versión
+      const existingSeason = scraperMap.get(canonicalId)!;
+      finalSeasons.push(existingSeason);
+      console.log(`✅ ${arco.name} (desde scraper)`);
+    } else {
+      // El arco no existe en el scraper, marcarlo como faltante para procesarlo
+      missingArcos.push(arco);
+      console.log(`⏳ ${arco.name} (faltante, se procesará)`);
+    }
+  }
+
+  // Procesar arcos faltantes y crear mapa para insertarlos en el orden correcto
+  const missingArcosMap = new Map<string, Season>();
+
+  if (missingArcos.length > 0) {
+    console.log(`\n🔄 Procesando ${missingArcos.length} arcos faltantes...`);
+
+    for (const arco of missingArcos) {
+      try {
+        const season = await createSeasonFromArco(arco);
+        const canonicalId = getCanonicalId(arco.name);
+        missingArcosMap.set(canonicalId, season);
+        console.log(`✅ Procesado: ${arco.name}`);
+      } catch (error) {
+        console.error(`❌ Error procesando ${arco.name}:`, error);
+      }
+    }
+
+    // Reconstruir la lista final insertando los arcos faltantes en orden
+    const orderedSeasons: Season[] = [];
+
+    for (const arco of arcosJson) {
+      const canonicalId = getCanonicalId(arco.name);
+
+      if (scraperMap.has(canonicalId)) {
+        // Usar versión del scraper
+        orderedSeasons.push(scraperMap.get(canonicalId)!);
+      } else if (missingArcosMap.has(canonicalId)) {
+        // Usar versión procesada desde JSON
+        orderedSeasons.push(missingArcosMap.get(canonicalId)!);
+        console.log(`🔄 Insertado en orden: ${arco.name}`);
+      }
+    }
+
+    // Reemplazar la lista de finalSeasons
+    finalSeasons.length = 0;
+    finalSeasons.push(...orderedSeasons);
+  }
+
+  // Agregar cualquier temporada del scraper que no esté en arcos.json al final
+  const unusedScraperSeasons: Season[] = [];
+  for (const season of scraperData.seasons) {
+    const canonicalId = getCanonicalId(season.title);
+    if (!processedArcos.includes(canonicalId)) {
+      unusedScraperSeasons.push(season);
+    }
+  }
+
+  if (unusedScraperSeasons.length > 0) {
+    console.log(
+      `\n➕ Agregando ${unusedScraperSeasons.length} temporadas adicionales del scraper:`
+    );
+    for (const season of unusedScraperSeasons) {
+      finalSeasons.push(season);
+      console.log(`📝 Agregado al final: ${season.title}`);
+    }
+  }
+
+  console.log(`\n📊 Resultado final:`);
+  console.log(`� Arcos procesados en orden: ${processedArcos.length}`);
+  console.log(`📊 Arcos faltantes agregados: ${missingArcos.length}`);
+  console.log(
+    `📊 Temporadas adicionales del scraper: ${unusedScraperSeasons.length}`
+  );
+  console.log(`📊 Total final: ${finalSeasons.length}`);
+
+  const unifiedData: OnePaceData = {
+    ...scraperData,
+    seasons: finalSeasons,
+    metadata: {
+      ...scraperData.metadata,
+      totalSeasons: finalSeasons.length,
+      seasonsWithSubtitles: finalSeasons.filter((s) => s.subtitle).length,
+      seasonsWithDub: finalSeasons.filter((s) => s.dub).length,
+      seasonsWithExtended: finalSeasons.filter((s) => s.extended).length,
+      // Agregar metadatos sobre la unificación
+      unifiedWithArcos: true,
+      arcosFromJson: missingArcos.length,
+      arcosFromScraper: scraperData.seasons.length,
+      arcosTotal: finalSeasons.length,
+      orderSource: "arcos.json (canonical)",
+    } as any,
+  };
+
+  console.log(
+    `✅ Unificación completada respetando orden lógico de arcos.json`
+  );
+  return unifiedData;
+}
+
 // Función principal
 async function main() {
   try {
     console.log("🚀 Iniciando extracción de datos de One Pace...");
 
     // Extraer datos en ambos idiomas
-    const [onePaceES, onePaceEN] = await Promise.all([
+    const [scraperES, scraperEN] = await Promise.all([
       extractOnePaceData("es"),
       extractOnePaceData("en"),
     ]);
+
+    // Unificar con arcos.json (solo en español por ahora)
+    console.log("\n🔗 Unificando datos con arcos.json...");
+    const onePaceES = await unifyWithArcosJson(scraperES);
+    const onePaceEN = scraperEN; // Inglés sin modificar por ahora
 
     // Mostrar estadísticas
     console.log(`\n📊 ESTADÍSTICAS ESPAÑOL:`);

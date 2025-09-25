@@ -552,6 +552,23 @@
       }
     },
     {
+      "id": "the-adventures-of-buggys-crew",
+      "title": "Las aventuras de los Piratas de Buggy",
+      "description": "Buggy, luego de ser derrotado por Luffy, Zoro y Nami, empieza su contienda por recuperar sus partes del cuerpo y su tripulación, para poder tener su vistoza venganza contra Luffy.",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Pixeldrain: 720p",
+            "url": "https://pixeldrain.net/api/file/chMGGDVa"
+          },
+          {
+            "quality": "Pixeldrain:1080p",
+            "url": "https://pixeldrain.net/api/file/3hhKyv85"
+          }
+        ]
+      }
+    },
+    {
       "id": "arlong-park",
       "title": "Arlong Park",
       "description": "La ciudad natal de Nami ha sido controlada desde hace tiempo por Arlong y su banda de Gyojin (hombres-pez) provenientes del Grand Line. Cuando los Sombrero de Paja llegan, se encuentran que su futura navegante ha dejado atrás unos cuantos detalles clave de sí misma.",
@@ -1050,23 +1067,6 @@
           {
             "quality": "Pixeldrain:1080p - Video 10",
             "url": "https://pixeldrain.net/api/file/JheSAhvr"
-          }
-        ]
-      }
-    },
-    {
-      "id": "the-adventures-of-buggys-crew",
-      "title": "Las aventuras de los Piratas de Buggy",
-      "description": "Buggy, luego de ser derrotado por Luffy, Zoro y Nami, empieza su contienda por recuperar sus partes del cuerpo y su tripulación, para poder tener su vistoza venganza contra Luffy.",
-      "subtitle": {
-        "qualities": [
-          {
-            "quality": "Pixeldrain: 720p",
-            "url": "https://pixeldrain.net/api/file/chMGGDVa"
-          },
-          {
-            "quality": "Pixeldrain:1080p",
-            "url": "https://pixeldrain.net/api/file/3hhKyv85"
           }
         ]
       }
@@ -2009,6 +2009,43 @@
       }
     },
     {
+      "id": "long-ring-long-land",
+      "title": "Long Ring Long Land",
+      "description": "Arco Long Ring Long Land - Procesado desde arcos.json",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Episodio 1",
+            "url": "https://pixeldrain.net/api/file/YqRwjTE5"
+          },
+          {
+            "quality": "Episodio 2",
+            "url": "https://pixeldrain.net/api/file/QDcHPF2p"
+          },
+          {
+            "quality": "Episodio 3",
+            "url": "https://pixeldrain.net/api/file/whCnB5nS"
+          },
+          {
+            "quality": "Episodio 4",
+            "url": "https://pixeldrain.net/api/file/sSjCtXvK"
+          },
+          {
+            "quality": "Episodio 5",
+            "url": "https://pixeldrain.net/api/file/JoDoaV6Q"
+          },
+          {
+            "quality": "Episodio 6",
+            "url": "https://pixeldrain.net/api/file/9PWrqzJ6"
+          },
+          {
+            "quality": "Episodio 7",
+            "url": "https://pixeldrain.net/api/file/kTS9pH3k"
+          }
+        ]
+      }
+    },
+    {
       "id": "water-seven",
       "title": "Water Seven",
       "description": "Los Sombrero de Paja caen en la gloriosa ciudad de Water Seven, conocida mundialmente por sus astilleros sin precedentes. Los piratas van a preguntar sobre las reparaciones de su barco, pero la ciudad amenaza con quedarse con su dinero, barco y tripulantes.",
@@ -2262,6 +2299,35 @@
           {
             "quality": "Pixeldrain:1080p - Video 25",
             "url": "https://pixeldrain.net/api/file/12o5ttDp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "post-enies-lobby",
+      "title": "Post-Enies Lobby",
+      "description": "Arco Post-Enies Lobby - Procesado desde arcos.json",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Episodio 1",
+            "url": "https://pixeldrain.net/api/file/vaUt9iS2"
+          },
+          {
+            "quality": "Episodio 2",
+            "url": "https://pixeldrain.net/api/file/2Jz6Xeke"
+          },
+          {
+            "quality": "Episodio 3",
+            "url": "https://pixeldrain.net/api/file/C8YDX2vu"
+          },
+          {
+            "quality": "Episodio 4",
+            "url": "https://pixeldrain.net/api/file/u91v2KnX"
+          },
+          {
+            "quality": "Episodio 5",
+            "url": "https://pixeldrain.net/api/file/cHAnJxZ8"
           }
         ]
       }
@@ -4400,6 +4466,275 @@
       }
     },
     {
+      "id": "onigashima-y-egghead",
+      "title": "Onigashima y Egghead",
+      "description": "Arco Onigashima y Egghead - Procesado desde arcos.json",
+      "subtitle": {
+        "qualities": [
+          {
+            "quality": "Episodio 1",
+            "url": "https://pixeldrain.net/api/file/MYpEeyuv"
+          },
+          {
+            "quality": "Episodio 2",
+            "url": "https://pixeldrain.net/api/file/Rgd3iwyh"
+          },
+          {
+            "quality": "Episodio 3",
+            "url": "https://pixeldrain.net/api/file/hUNd344R"
+          },
+          {
+            "quality": "Episodio 4",
+            "url": "https://pixeldrain.net/api/file/WUZRwnNt"
+          },
+          {
+            "quality": "Episodio 5",
+            "url": "https://pixeldrain.net/api/file/QTCpZVxd"
+          },
+          {
+            "quality": "Episodio 6",
+            "url": "https://pixeldrain.net/api/file/iKwp6RkX"
+          },
+          {
+            "quality": "Episodio 7",
+            "url": "https://pixeldrain.net/api/file/uE75XyYV"
+          },
+          {
+            "quality": "Episodio 8",
+            "url": "https://pixeldrain.net/api/file/WGznjNQH"
+          },
+          {
+            "quality": "Episodio 9",
+            "url": "https://pixeldrain.net/api/file/9TJZYzgN"
+          },
+          {
+            "quality": "Episodio 10",
+            "url": "https://pixeldrain.net/api/file/iYeQwGA7"
+          },
+          {
+            "quality": "Episodio 11",
+            "url": "https://pixeldrain.net/api/file/oAtQ1UnR"
+          },
+          {
+            "quality": "Episodio 12",
+            "url": "https://pixeldrain.net/api/file/mLxQjxwB"
+          },
+          {
+            "quality": "Episodio 13",
+            "url": "https://pixeldrain.net/api/file/47uQGGqZ"
+          },
+          {
+            "quality": "Episodio 14",
+            "url": "https://pixeldrain.net/api/file/7egdfczm"
+          },
+          {
+            "quality": "Episodio 15",
+            "url": "https://pixeldrain.net/api/file/7TULC2jX"
+          },
+          {
+            "quality": "Episodio 16",
+            "url": "https://pixeldrain.net/api/file/ZxPE8cQ2"
+          },
+          {
+            "quality": "Episodio 17",
+            "url": "https://pixeldrain.net/api/file/JjuP33pb"
+          },
+          {
+            "quality": "Episodio 18",
+            "url": "https://pixeldrain.net/api/file/JGHvkqrK"
+          },
+          {
+            "quality": "Episodio 19",
+            "url": "https://pixeldrain.net/api/file/3TGjq3aE"
+          },
+          {
+            "quality": "Episodio 20",
+            "url": "https://pixeldrain.net/api/file/ZAfSRwbr"
+          },
+          {
+            "quality": "Episodio 21",
+            "url": "https://pixeldrain.net/api/file/MCBWhMhu"
+          },
+          {
+            "quality": "Episodio 22",
+            "url": "https://pixeldrain.net/api/file/Gz3HwqfU"
+          },
+          {
+            "quality": "Episodio 23",
+            "url": "https://pixeldrain.net/api/file/FQpUds9p"
+          },
+          {
+            "quality": "Episodio 24",
+            "url": "https://pixeldrain.net/api/file/g1rE54GB"
+          },
+          {
+            "quality": "Episodio 25",
+            "url": "https://pixeldrain.net/api/file/BHDBLiss"
+          },
+          {
+            "quality": "Episodio 26",
+            "url": "https://pixeldrain.net/api/file/3qtwNuNE"
+          },
+          {
+            "quality": "Episodio 27",
+            "url": "https://pixeldrain.net/api/file/Tq1M9gci"
+          },
+          {
+            "quality": "Episodio 28",
+            "url": "https://pixeldrain.net/api/file/F4uibeNr"
+          },
+          {
+            "quality": "Episodio 29",
+            "url": "https://pixeldrain.net/api/file/Sn72yJbX"
+          },
+          {
+            "quality": "Episodio 30",
+            "url": "https://pixeldrain.net/api/file/SyYR3DX3"
+          },
+          {
+            "quality": "Episodio 31",
+            "url": "https://pixeldrain.net/api/file/dtEEmm9y"
+          },
+          {
+            "quality": "Episodio 32",
+            "url": "https://pixeldrain.net/api/file/Z7qwxX83"
+          },
+          {
+            "quality": "Episodio 33",
+            "url": "https://pixeldrain.net/api/file/QxALZgTt"
+          },
+          {
+            "quality": "Episodio 34",
+            "url": "https://pixeldrain.net/api/file/zCrWgEvC"
+          },
+          {
+            "quality": "Episodio 35",
+            "url": "https://pixeldrain.net/api/file/TvjCNwZ5"
+          },
+          {
+            "quality": "Episodio 36",
+            "url": "https://pixeldrain.net/api/file/KP7VxtEn"
+          },
+          {
+            "quality": "Episodio 37",
+            "url": "https://pixeldrain.net/api/file/oxCewJ2P"
+          },
+          {
+            "quality": "Episodio 38",
+            "url": "https://pixeldrain.net/api/file/TZUVo2jH"
+          },
+          {
+            "quality": "Episodio 39",
+            "url": "https://pixeldrain.net/api/file/EctZnSU4"
+          },
+          {
+            "quality": "Episodio 40",
+            "url": "https://pixeldrain.net/api/file/3DDimbdi"
+          },
+          {
+            "quality": "Episodio 41",
+            "url": "https://pixeldrain.net/api/file/wxUbTSXJ"
+          },
+          {
+            "quality": "Episodio 42",
+            "url": "https://pixeldrain.net/api/file/QwNNS1JY"
+          },
+          {
+            "quality": "Episodio 43",
+            "url": "https://pixeldrain.net/api/file/RL8Bj5du"
+          },
+          {
+            "quality": "Episodio 44",
+            "url": "https://pixeldrain.net/api/file/t9CRnKnr"
+          },
+          {
+            "quality": "Episodio 45",
+            "url": "https://pixeldrain.net/api/file/ag4JUKuN"
+          },
+          {
+            "quality": "Episodio 46",
+            "url": "https://pixeldrain.net/api/file/s1v9DsKy"
+          },
+          {
+            "quality": "Episodio 47",
+            "url": "https://pixeldrain.net/api/file/kkg1S4n1"
+          },
+          {
+            "quality": "Episodio 48",
+            "url": "https://pixeldrain.net/api/file/JV8STUQf"
+          },
+          {
+            "quality": "Episodio 49",
+            "url": "https://pixeldrain.net/api/file/YYRrDdZo"
+          },
+          {
+            "quality": "Episodio 50",
+            "url": "https://pixeldrain.net/api/file/Xb2L64WR"
+          },
+          {
+            "quality": "Episodio 51",
+            "url": "https://pixeldrain.net/api/file/YyJJvtUG"
+          },
+          {
+            "quality": "Episodio 52",
+            "url": "https://pixeldrain.net/api/file/bhA9wjHq"
+          },
+          {
+            "quality": "Episodio 53",
+            "url": "https://pixeldrain.net/api/file/keycLWS7"
+          },
+          {
+            "quality": "Episodio 54",
+            "url": "https://pixeldrain.net/api/file/RQnGW4b2"
+          },
+          {
+            "quality": "Episodio 55",
+            "url": "https://pixeldrain.net/api/file/Tq8tstFe"
+          },
+          {
+            "quality": "Episodio 56",
+            "url": "https://pixeldrain.net/api/file/duT7ohBP"
+          },
+          {
+            "quality": "Episodio 57",
+            "url": "https://pixeldrain.net/api/file/gdW8Vnis"
+          },
+          {
+            "quality": "Episodio 58",
+            "url": "https://pixeldrain.net/api/file/a3Hyb3F3"
+          },
+          {
+            "quality": "Episodio 59",
+            "url": "https://pixeldrain.net/api/file/Pn3PQrqr"
+          },
+          {
+            "quality": "Episodio 60",
+            "url": "https://pixeldrain.net/api/file/P8k2SVP3"
+          },
+          {
+            "quality": "Episodio 61",
+            "url": "https://pixeldrain.net/api/file/hp6n6iBD"
+          },
+          {
+            "quality": "Episodio 62",
+            "url": "https://pixeldrain.net/api/file/r1sD1XbY"
+          },
+          {
+            "quality": "Episodio 63",
+            "url": "https://pixeldrain.net/api/file/qzsjVRJ9"
+          },
+          {
+            "quality": "Episodio 64",
+            "url": "https://pixeldrain.net/api/file/CiBwHmDT"
+          },
+          {
+            "quality": "Episodio 65",
+            "url": "https://pixeldrain.net/api/file/ABsTcGZ8"
+          }
+        ]
+      }
+    },
+    {
       "id": "warship-island-01-april-fools-2025",
       "title": "Special: Warship Island 01 (April Fools 2025)",
       "description": "",
@@ -4422,11 +4757,16 @@
     }
   ],
   "metadata": {
-    "totalSeasons": 34,
-    "seasonsWithSubtitles": 33,
+    "totalSeasons": 37,
+    "seasonsWithSubtitles": 36,
     "seasonsWithDub": 12,
     "seasonsWithExtended": 2,
-    "extractedAt": "2025-09-22T01:49:37.693Z",
-    "language": "es"
+    "extractedAt": "2025-09-25T22:13:32.101Z",
+    "language": "es",
+    "unifiedWithArcos": true,
+    "arcosFromJson": 3,
+    "arcosFromScraper": 34,
+    "arcosTotal": 37,
+    "orderSource": "arcos.json (canonical)"
   }
 }
