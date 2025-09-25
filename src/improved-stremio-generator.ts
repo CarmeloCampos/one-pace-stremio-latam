@@ -1,7 +1,7 @@
 import { existsSync } from "fs";
 import { mkdir, writeFile } from "fs/promises";
 import { join } from "path";
-import type { OnePaceData, Season } from "./scraper";
+import type { OnePaceData, Season, Quality } from "./scraper";
 
 interface StremioManifest {
   id: string;
@@ -54,6 +54,10 @@ interface StremioStream {
 
 interface StremioStreams {
   streams: StremioStream[];
+}
+
+interface QualityWithEpisode extends Quality {
+  episodeNum: number;
 }
 
 export class ImprovedStremioAddonGenerator {
@@ -252,43 +256,50 @@ export class ImprovedStremioAddonGenerator {
   private getUniqueEpisodesFromSeason(season: Season): number[] {
     const episodeSet = new Set<number>();
 
-    // Recopilar episodios de subtítulos
+    // Primero, recopilar todos los episodios que siguen el patrón "Video X"
+    const processQualitiesForPattern = (qualities: Quality[]) => {
+      qualities.forEach((quality) => {
+        const match = quality.quality.match(/Video (\d+)/);
+        if (match && match[1]) {
+          episodeSet.add(parseInt(match[1]));
+        }
+      });
+    };
+
+    // Procesar todas las qualities para encontrar patrones "Video X"
     if (season.subtitle?.qualities) {
-      season.subtitle.qualities.forEach((quality) => {
-        const match = quality.quality.match(/Video (\d+)/);
-        if (match && match[1]) {
-          episodeSet.add(parseInt(match[1]));
-        }
-      });
+      processQualitiesForPattern(season.subtitle.qualities);
     }
-
-    // Recopilar episodios de doblaje
     if (season.dub?.qualities) {
-      season.dub.qualities.forEach((quality) => {
-        const match = quality.quality.match(/Video (\d+)/);
-        if (match && match[1]) {
-          episodeSet.add(parseInt(match[1]));
-        }
-      });
+      processQualitiesForPattern(season.dub.qualities);
     }
-
-    // Recopilar episodios extendidos
     if (season.extended?.subtitle?.qualities) {
-      season.extended.subtitle.qualities.forEach((quality) => {
-        const match = quality.quality.match(/Video (\d+)/);
-        if (match && match[1]) {
-          episodeSet.add(parseInt(match[1]));
-        }
-      });
+      processQualitiesForPattern(season.extended.subtitle.qualities);
+    }
+    if (season.extended?.dub?.qualities) {
+      processQualitiesForPattern(season.extended.dub.qualities);
     }
 
-    if (season.extended?.dub?.qualities) {
-      season.extended.dub.qualities.forEach((quality) => {
+    // Luego, contar episodios adicionales únicos que no siguen el patrón
+    const additionalUrls = new Set<string>();
+    const countAdditionalEpisodes = (qualities: Quality[]) => {
+      qualities.forEach((quality) => {
         const match = quality.quality.match(/Video (\d+)/);
-        if (match && match[1]) {
-          episodeSet.add(parseInt(match[1]));
+        if (!match) {
+          additionalUrls.add(quality.url);
         }
       });
+    };
+
+    if (season.subtitle?.qualities) {
+      countAdditionalEpisodes(season.subtitle.qualities);
+    }
+
+    // Agregar episodios adicionales secuencialmente después de los episodios con patrón
+    const maxPatternEpisode =
+      episodeSet.size > 0 ? Math.max(...Array.from(episodeSet)) : 0;
+    for (let i = 1; i <= additionalUrls.size; i++) {
+      episodeSet.add(maxPatternEpisode + i);
     }
 
     // Si no se encontraron episodios con el patrón "Video X",
@@ -378,92 +389,95 @@ export class ImprovedStremioAddonGenerator {
   ): void {
     const langLabel = language === "es" ? "Español" : "English";
 
-    // Subtítulos normales
-    if (season.subtitle?.qualities) {
-      season.subtitle.qualities.forEach((quality) => {
+    // Función para mapear qualities a episodios secuenciales
+    const mapQualitiesToEpisodes = (
+      qualities: Quality[],
+      isDub: boolean = false,
+      customType?: string
+    ) => {
+      // Separar qualities con patrón "Video X" y sin patrón
+      const patterned: QualityWithEpisode[] = [];
+      const nonPatterned: Quality[] = [];
+
+      qualities.forEach((quality) => {
         const match = quality.quality.match(/Video (\d+)/);
-        // Si hay patrón "Video X", verificar que coincida con el episodio
-        // Si no hay patrón, agregar para el episodio 1 (temporadas de un solo episodio)
-        if (
-          (match && match[1] && parseInt(match[1]) === episodeVideoNum) ||
-          (!match && episodeVideoNum === 1)
-        ) {
+        if (match && match[1]) {
+          patterned.push({ ...quality, episodeNum: parseInt(match[1]) });
+        } else {
+          nonPatterned.push(quality);
+        }
+      });
+
+      // Procesar qualities con patrón "Video X"
+      patterned.forEach((quality) => {
+        if (quality.episodeNum === episodeVideoNum) {
+          const streamType = customType || (isDub ? "Doblaje" : "Subtítulos");
           streams.push({
             title: `${this.extractQuality(
               quality.quality
-            )} - Subtítulos ${langLabel}`,
+            )} - ${streamType} ${langLabel}`,
             url: quality.url,
             quality: this.extractQuality(quality.quality),
             language: language,
           });
         }
       });
+
+      // Procesar qualities sin patrón (episodios adicionales)
+      // Agrupar por URL para identificar episodios únicos
+      const uniqueUrls = [...new Set(nonPatterned.map((q) => q.url))];
+      const maxPatternEpisode =
+        patterned.length > 0
+          ? Math.max(...patterned.map((q) => q.episodeNum))
+          : 0;
+
+      uniqueUrls.forEach((url, index) => {
+        const additionalEpisodeNum = maxPatternEpisode + index + 1;
+        if (additionalEpisodeNum === episodeVideoNum) {
+          // Encontrar la quality correspondiente a esta URL
+          const quality = nonPatterned.find((q) => q.url === url);
+          if (quality) {
+            const streamType = customType || (isDub ? "Doblaje" : "Subtítulos");
+            streams.push({
+              title: `${this.extractQuality(
+                quality.quality
+              )} - ${streamType} ${langLabel}`,
+              url: quality.url,
+              quality: this.extractQuality(quality.quality),
+              language: language,
+            });
+          }
+        }
+      });
+    };
+
+    // Subtítulos normales
+    if (season.subtitle?.qualities) {
+      mapQualitiesToEpisodes(season.subtitle.qualities, false);
     }
 
     // Doblaje normal
     if (season.dub?.qualities) {
-      season.dub.qualities.forEach((quality) => {
-        const match = quality.quality.match(/Video (\d+)/);
-        // Si hay patrón "Video X", verificar que coincida con el episodio
-        // Si no hay patrón, agregar para el episodio 1 (temporadas de un solo episodio)
-        if (
-          (match && match[1] && parseInt(match[1]) === episodeVideoNum) ||
-          (!match && episodeVideoNum === 1)
-        ) {
-          streams.push({
-            title: `${this.extractQuality(
-              quality.quality
-            )} - Doblaje ${langLabel}`,
-            url: quality.url,
-            quality: this.extractQuality(quality.quality),
-            language: language,
-          });
-        }
-      });
+      mapQualitiesToEpisodes(season.dub.qualities, true);
     }
 
     // Subtítulos extendidos
+    // Subtítulos extendidos
     if (season.extended?.subtitle?.qualities) {
-      season.extended.subtitle.qualities.forEach((quality) => {
-        const match = quality.quality.match(/Video (\d+)/);
-        // Si hay patrón "Video X", verificar que coincida con el episodio
-        // Si no hay patrón, agregar para el episodio 1 (temporadas de un solo episodio)
-        if (
-          (match && match[1] && parseInt(match[1]) === episodeVideoNum) ||
-          (!match && episodeVideoNum === 1)
-        ) {
-          streams.push({
-            title: `${this.extractQuality(
-              quality.quality
-            )} - Extendido Sub ${langLabel}`,
-            url: quality.url,
-            quality: this.extractQuality(quality.quality),
-            language: language,
-          });
-        }
-      });
+      mapQualitiesToEpisodes(
+        season.extended.subtitle.qualities,
+        false,
+        "Extendido Sub"
+      );
     }
 
     // Doblaje extendido
     if (season.extended?.dub?.qualities) {
-      season.extended.dub.qualities.forEach((quality) => {
-        const match = quality.quality.match(/Video (\d+)/);
-        // Si hay patrón "Video X", verificar que coincida con el episodio
-        // Si no hay patrón, agregar para el episodio 1 (temporadas de un solo episodio)
-        if (
-          (match && match[1] && parseInt(match[1]) === episodeVideoNum) ||
-          (!match && episodeVideoNum === 1)
-        ) {
-          streams.push({
-            title: `${this.extractQuality(
-              quality.quality
-            )} - Extendido Dub ${langLabel}`,
-            url: quality.url,
-            quality: this.extractQuality(quality.quality),
-            language: language,
-          });
-        }
-      });
+      mapQualitiesToEpisodes(
+        season.extended.dub.qualities,
+        true,
+        "Extendido Dub"
+      );
     }
   }
 

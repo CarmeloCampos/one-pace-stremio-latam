@@ -42,7 +42,7 @@ const textIndexOnePace = {
 };
 
 // Interfaces de tipado
-interface Quality {
+export interface Quality {
   quality: string;
   url: string;
 }
@@ -76,6 +76,26 @@ interface OnePaceData {
     extractedAt: string;
     language: "es" | "en";
   };
+}
+
+interface UnifiedOnePaceMetadata {
+  totalSeasons: number;
+  seasonsWithSubtitles: number;
+  seasonsWithDub: number;
+  seasonsWithExtended: number;
+  extractedAt: string;
+  language: "es" | "en";
+  unifiedWithArcos: boolean;
+  arcosFromJson: number;
+  arcosFromScraper: number;
+  arcosTotal: number;
+  orderSource: string;
+}
+
+interface UnifiedOnePaceData {
+  textIndex: typeof textIndexOnePace;
+  seasons: Season[];
+  metadata: UnifiedOnePaceMetadata;
 }
 
 // Funciones para cargar arcos del JSON
@@ -482,10 +502,21 @@ async function saveDataWithSmartSystem(
 // Función para unificar datos del scraper con arcos.json respetando el orden correcto
 async function unifyWithArcosJson(
   scraperData: OnePaceData
-): Promise<OnePaceData> {
+): Promise<UnifiedOnePaceData> {
   const arcosJson = loadArcosJson();
   if (arcosJson.length === 0) {
-    return scraperData; // Si no hay arcos JSON, devolver datos originales
+    // Si no hay arcos JSON, devolver datos con metadata extendida
+    return {
+      ...scraperData,
+      metadata: {
+        ...scraperData.metadata,
+        unifiedWithArcos: false,
+        arcosFromJson: 0,
+        arcosFromScraper: scraperData.seasons.length,
+        arcosTotal: scraperData.seasons.length,
+        orderSource: "scraper (original)",
+      },
+    };
   }
 
   console.log(
@@ -526,7 +557,6 @@ async function unifyWithArcosJson(
 
   // Crear mapa para todos los arcos procesados (faltantes + mejorados)
   const processedArcosMap = new Map<string, Season>();
-  let arcosProcessed = 0;
 
   console.log(`\n🔄 Procesando arcos desde JSON...`);
 
@@ -543,7 +573,6 @@ async function unifyWithArcosJson(
       try {
         const season = await createSeasonFromArco(arco);
         processedArcosMap.set(canonicalId, season);
-        arcosProcessed++;
         console.log(`✅ Arco faltante procesado: ${arco.name}`);
       } catch (error) {
         console.error(`❌ Error procesando arco faltante ${arco.name}:`, error);
@@ -557,7 +586,6 @@ async function unifyWithArcosJson(
           arco
         );
         processedArcosMap.set(canonicalId, enhancedSeason);
-        arcosProcessed++;
         console.log(`🔄 Arco mejorado con episodios adicionales: ${arco.name}`);
       } catch (error) {
         console.error(`❌ Error mejorando ${arco.name}:`, error);
@@ -615,7 +643,7 @@ async function unifyWithArcosJson(
   );
   console.log(`📊 Total final: ${finalSeasons.length}`);
 
-  const unifiedData: OnePaceData = {
+  const unifiedData: UnifiedOnePaceData = {
     ...scraperData,
     seasons: finalSeasons,
     metadata: {
@@ -630,7 +658,7 @@ async function unifyWithArcosJson(
       arcosFromScraper: scraperData.seasons.length,
       arcosTotal: finalSeasons.length,
       orderSource: "arcos.json (canonical)",
-    } as any,
+    },
   };
 
   console.log(
@@ -692,4 +720,4 @@ async function main() {
 // Ejecutar función principal
 main();
 
-export type { OnePaceData, Season, Quality, MediaType, ExtendedVersions };
+export type { OnePaceData, Season, MediaType, ExtendedVersions };

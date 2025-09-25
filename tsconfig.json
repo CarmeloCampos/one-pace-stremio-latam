@@ -27,6 +27,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
 
+    // PREVENT 'ANY' USAGE - No explicit any types allowed
+    "suppressImplicitAnyIndexErrors": false,
+
     // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,

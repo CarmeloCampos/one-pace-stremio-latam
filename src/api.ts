@@ -106,7 +106,14 @@ export class OnePaceAPI {
     const season = this.getSeasonById(seasonId, lang);
     if (!season) return {};
 
-    const result: any = {};
+    const result: {
+      subtitle?: string[];
+      dub?: string[];
+      extended?: {
+        subtitle?: string[];
+        dub?: string[];
+      };
+    } = {};
 
     if (season.subtitle) {
       result.subtitle = season.subtitle.qualities.map((q) => q.quality);
