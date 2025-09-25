@@ -114,7 +114,7 @@ export class ImprovedStremioAddonGenerator {
   private async generateUnifiedManifest(): Promise<void> {
     const manifest: StremioManifest = {
       id: this.addonId,
-      version: "2.2.1",
+      version: "2.3.0",
       name: "One Pace - Complete Series",
       description:
         "Complete One Pace series with all arcs as seasons. Includes Spanish and English subtitles/dubbing.",
