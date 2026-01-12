@@ -7,11 +7,11 @@ Addon completo de Stremio para ver One Pace con subtítulos y doblaje en españo
 ### ✨ Addon Unificado para Stremio
 
 - **Una sola serie**: "One Pace" como serie principal unificada
-- **403+ episodios**: Todos los arcos organizados como temporadas  
+- **30+ temporadas**: Todos los arcos organizados como temporadas
 - **Múltiples formatos por episodio**: Subtítulos y doblaje disponibles
 - **Soporte multiidioma**: Español e inglés completamente integrados
 - **Versiones extendidas**: Incluye episodios normales y extendidos
-- **Calidades múltiples**: 480p, 720p, 1080p para cada formato
+- **Integración Pixeldrain**: URLs directas de streaming
 - **Despliegue automatizado**: GitHub Actions + Cloudflare Pages
 
 ### 🤖 Sistema de Scraping Inteligente
@@ -24,28 +24,15 @@ Addon completo de Stremio para ver One Pace con subtítulos y doblaje en españo
 - 🎙️ **Detección inteligente de subtítulos y doblaje**
 - 📁 **Archivos JSON optimizados y versionados**
 - 🔗 **Integración completa con Pixeldrain API**
+- 📋 **Integración con arcos.json para episodios adicionales**
 
-## 🗂️ Estructura de Temporadas
+### 📋 Gestión de Arcos (arcos.json)
 
-Cada temporada corresponde a un arco de One Pace con episodios completos:
-
-- **Temporada 1**: Romance Dawn
-- **Temporada 2**: Orange Town  
-- **Temporada 3**: Syrup Village
-- **Temporada 4**: Baratie
-- **Temporada 5**: Arlong Park
-- **Temporada 6**: Loguetown
-- Y así sucesivamente hasta **38 temporadas** (inglés) / **34 temporadas** (español)
-
-### 🎬 Formatos Disponibles por Episodio
-
-Para cada episodio tienes acceso a:
-
-- **Subtítulos en Español** (480p, 720p, 1080p)
-- **Doblaje en Español** (480p, 720p, 1080p)
-- **Subtítulos en Inglés** (480p, 720p, 1080p)
-- **Doblaje en Inglés** (480p, 720p, 1080p) - cuando esté disponible
-- **Versiones Extendidas** - para algunos arcos
+- **Arcos estáticos**: Configuración manual de arcos desde `arcos.json`
+- **Episodios adicionales**: Soporte para agregar episodios extra a arcos existentes
+- **Notas y estados**: Campo opcional para observaciones sobre arcos incompletos
+- **API dedicada**: `ArcosAPI` para consultar y buscar arcos
+- **Unificación inteligente**: Combina datos del scraper con arcos.json
 
 ## ⚡ Instalación y Configuración
 
@@ -72,17 +59,21 @@ bun install
 bun run demo
 ```
 
-## � Uso del Sistema
+## 🎮 Uso del Sistema
 
 ### 1. Usar el Addon en Producción (Recomendado)
 
-**URL del Addon**: `https://one-pace-latam-stremio.pages.dev/manifest.json`
+**URL del Manifest**: `https://one-pace-latam-stremio.pages.dev/manifest.json`
+
+**Instalación directa**: `stremio://one-pace-latam-stremio.pages.dev/manifest.json`
 
 1. Abre Stremio en cualquier dispositivo
-2. Ve a configuración (⚙️) → "Addons" 
+2. Ve a configuración (⚙️) → "Addons"
 3. Haz clic en "Add addon"
 4. Ingresa la URL: `https://one-pace-latam-stremio.pages.dev/manifest.json`
 5. ¡Disfruta de One Pace completo!
+
+**O usa el enlace de instalación directa**: `stremio://one-pace-latam-stremio.pages.dev/manifest.json`
 
 ### 2. Desarrollo Local
 
@@ -90,51 +81,71 @@ bun run demo
 # Generar el addon localmente
 bun run generate-unified
 
-# Para servir localmente, necesitarás implementar un servidor
 # El addon se genera en ./stremio-addon/
 ```
 
 ### 3. Extraer Datos (Scraper)
 
 ```bash
-# Extraer datos en ambos idiomas
+# Extraer datos en ambos idiomas y unificar con arcos.json
 bun run scraper
 ```
 
 El scraper inteligente:
 
-- ✅ Extrae datos de One Pace en español (34 temporadas) e inglés (38 temporadas)
+- ✅ Extrae datos de One Pace en español e inglés
 - 🔄 Detecta automáticamente cambios usando hashing MD5
 - 📁 Solo sobrescribe archivos cuando detecta cambios reales
 - 🌐 Integración completa con Pixeldrain API para carpetas de videos
 - 📊 Genera estadísticas completas por idioma
+- 🔗 Unifica datos con `arcos.json` para episodios adicionales
 - 💾 Guarda en `data/one-pace-data-es.json` y `data/one-pace-data-en.json`
 
-### 4. Usar la API Programática
+### 4. API Programática
 
 ```typescript
 import { OnePaceAPI } from "./src/api";
+import { ArcosAPI } from "./src/arcos-api";
 
-const api = new OnePaceAPI();
+// API de arcos (datos estáticos desde arcos.json)
+const arcosAPI = new ArcosAPI();
+arcosAPI.loadArcos();
 
-// Cargar datos
-await api.loadData("es");
+// Buscar arco por nombre
+const arco = arcosAPI.getArcoByName("Arabasta");
+console.log(arco?.link);
 
-// Obtener estadísticas
-const stats = api.getStats("es");
-console.log(stats);
+// Obtener arcos completos
+const completos = arcosAPI.getCompleteArcos();
+
+// API del scraper (datos extraídos de onepace.net)
+const scraperAPI = new OnePaceAPI();
+await scraperAPI.loadData("es");
 
 // Buscar temporada por ID
-const season = api.getSeasonById("romance-dawn", "es");
+const season = scraperAPI.getSeasonById("romance-dawn", "es");
 
 // Buscar por título
-const results = api.searchSeasonsByTitle("arabasta", "es");
+const results = scraperAPI.searchSeasonsByTitle("arabasta", "es");
 
 // Obtener temporadas con doblaje
-const withDub = api.getSeasonsWithDub("es");
+const withDub = scraperAPI.getSeasonsWithDub("es");
 ```
 
 ## 📊 Estructura de Datos
+
+### Arco (desde arcos.json)
+
+```typescript
+interface Arco {
+  name: string;
+  link: string;
+  additionalEpisodes?: string[];
+  notes?: string;
+}
+```
+
+### Season (desde scraper)
 
 ```typescript
 interface Season {
@@ -162,20 +173,23 @@ one-pace-stremio-latam/
 │   └── build_deploy.yml               # GitHub Actions para CI/CD
 ├── src/
 │   ├── improved-stremio-generator.ts  # Generador del addon unificado
-│   ├── api.ts                         # API programática para consultas
-│   ├── scraper.ts                     # Scraper inteligente principal  
+│   ├── api.ts                         # API para datos del scraper
+│   ├── arcos-api.ts                   # API para arcos desde arcos.json
+│   ├── scraper.ts                     # Scraper inteligente principal
 │   └── one-cheerio.ts                 # Función base de web scraping
 ├── data/
-│   ├── one-pace-data-es.json          # 34 temporadas en español
-│   └── one-pace-data-en.json          # 38 temporadas en inglés
-├── stremio-addon/                     # Addon generado (403+ archivos)
+│   ├── one-pace-data-es.json          # Datos extraídos (español)
+│   ├── one-pace-data-en.json          # Datos extraídos (inglés)
+│   └── .gitkeep
+├── stremio-addon/                     # Addon generado
 │   ├── manifest.json                  # Configuración del addon
 │   ├── catalog/series/                # Catálogos de series
 │   ├── meta/series/                   # Metadatos de episodios
-│   └── stream/series/                 # 403+ archivos de streams
+│   └── stream/series/                 # Archivos de streams
+├── arcos.json                         # Configuración de arcos estáticos
 ├── generate-improved-stremio.ts       # Script generador principal
 ├── index.ts                           # Demo y pruebas básicas
-├── package.json                       # Dependencias y scripts npm
+├── package.json                       # Dependencias y scripts
 ├── tsconfig.json                      # Configuración TypeScript estricta
 ├── wrangler.toml                      # Configuración Cloudflare Pages
 └── README.md                          # Esta documentación
@@ -184,19 +198,24 @@ one-pace-stremio-latam/
 ## 🛠️ Scripts Disponibles
 
 ```bash
-# Scripts principales
-```bash
-# Scripts principales de desarrollo
 bun run demo              # Ejecutar demo de estadísticas
 bun run scraper           # Ejecutar scraper inteligente completo
 bun run generate-unified  # Generar addon unificado de Stremio
 ```
 
-# El proyecto se despliega automáticamente con GitHub Actions
-# Cada push a main actualiza https://one-pace-latam-stremio.pages.dev/
-```
-
 ## 🎯 Funcionalidades de la API
+
+### ArcosAPI
+
+- `loadArcos()` - Cargar arcos desde arcos.json
+- `getAllArcos()` - Obtener todos los arcos
+- `searchArco(query)` - Buscar por nombre (parcial)
+- `getArcoByName(name)` - Obtener por nombre exacto
+- `getCompleteArcos()` - Arcos sin notas (completos)
+- `getArcosWithNotes()` - Arcos con observaciones
+- `getAllLinks()` - Obtener solo enlaces
+- `getPixeldrainIds()` - Obtener IDs de Pixeldrain
+- `getStats()` - Estadísticas básicas
 
 ### OnePaceAPI
 
@@ -227,31 +246,34 @@ bun run generate-unified  # Generar addon unificado de Stremio
 
 ```
 1. onepace.net → Scraper (Cheerio)
-2. Pixeldrain API → Extracción de carpetas de videos  
-3. Datos procesados → JSON tipado (ES/EN)
-4. Generador → 403+ archivos de addon Stremio
-5. GitHub Actions → Despliegue automático
-6. Cloudflare Pages → Distribución global
+2. arcos.json → Integración de episodios adicionales
+3. Pixeldrain API → Extracción de carpetas de videos
+4. Datos procesados → JSON tipado (ES/EN)
+5. Generador → Archivos de addon Stremio
+6. GitHub Actions → Despliegue automático
+7. Cloudflare Pages → Distribución global
 ```
 
-## 📈 Estadísticas Actuales del Addon
+## 📈 Estadísticas del Addon
 
-- **403+ episodios** individuales disponibles
-- **38 temporadas** máximo (inglés) / **34 temporadas** (español)  
-- **Múltiples calidades**: 480p, 720p, 1080p por episodio
+El addon se genera dinámicamente con los datos extraídos del scraper y arcos.json. Las estadísticas exactas varían según las actualizaciones de One Pace.
+
+### Fuentes de Datos
+
+| Fuente | Tipo | Descripción |
+|--------|------|-------------|
+| onepace.net (ES) | Scraping | Arcos con subtítulos y doblaje en español |
+| onepace.net (EN) | Scraping | Arcos con subtítulos y doblaje en inglés |
+| arcos.json | Manual | Arcos con enlaces directos a Pixeldrain y episodios adicionales |
+
+### Características
+
+- **30+ temporadas** organizadas por arcos
+- **Múltiples calidades** por episodio (480p, 720p, 1080p)
 - **4 formatos por episodio**: Sub ES, Dub ES, Sub EN, Dub EN
+- **Versiones extendidas** para algunos arcos
 - **Actualización automática** cada push a repositorio
 - **Despliegue global** vía Cloudflare Pages
-
-### Estadísticas Detalladas por Idioma
-
-| Métrica              | Español | Inglés |
-| -------------------- | ------- | ------ |
-| Temporadas totales   | 34      | 38     |
-| Con subtítulos       | 33      | 38     |
-| Con doblaje          | 12      | 24     |
-| Con versiones extended | 2     | 3      |
-| Última actualización | Automática con GitHub Actions |
 
 ## 🔧 Sistema Inteligente de Detección de Cambios
 
@@ -282,122 +304,6 @@ Ciertas temporadas tienen versiones extendidas:
 - **País de Wa**: Sub Extended
 - Y más en inglés...
 
-## � Cómo Funciona el Sistema Unificado
-
-### Antes vs Después
-
-#### Sistema Anterior (Legacy)
-
-```
-🔴 Problema: Cada arco era una "serie" separada
-├── Romance Dawn (Serie independiente)
-├── Orange Town (Serie independiente)
-├── Syrup Village (Serie independiente)
-└── ... (35+ series separadas)
-```
-
-#### Sistema Nuevo (Unificado)
-
-```
-✅ Solución: Una sola serie con temporadas
-One Pace (Serie unificada)
-├── Temporada 1: Romance Dawn
-│   ├── Episodio 1 (Sub ES, Dub ES, Sub EN, Dub EN)
-│   ├── Episodio 2 (Sub ES, Dub ES, Sub EN, Dub EN)
-│   └── ...
-├── Temporada 2: Orange Town
-├── Temporada 3: Syrup Village
-└── ... (29 temporadas)
-```
-
-### Generación del Addon
-
-1. **Carga de datos**: Lee los archivos JSON de español e inglés
-2. **Unificación**: Combina ambos idiomas en una sola serie
-3. **Organización**: Agrupa por temporadas (arcos) y episodios
-4. **Generación de streams**: Crea múltiples opciones por episodio
-5. **Exportación**: Genera los archivos JSON para Stremio
-
-### Servidor del Addon
-
-- Sirve los archivos JSON generados
-- Maneja CORS para compatibilidad con Stremio
-- Proporciona endpoints para manifest, catálogos, metadata y streams
-
-## 🚦 Comandos Rápidos
-
-```bash
-# Usar addon en producción (Recomendado)
-# URL: https://one-pace-latam-stremio.pages.dev/manifest.json
-
-# Desarrollo local
-```bash
-# Uso en producción (recomendado)
-# Añadir addon en Stremio: https://one-pace-latam-stremio.pages.dev/manifest.json
-
-# Desarrollo local
-bun run scraper           # Extraer o actualizar datos
-bun run generate-unified  # Generar addon unificado
-bun run demo              # Mostrar estadísticas y ejemplos
-```
-```
-
-## 📝 Ejemplo de Uso Completo
-
-```typescript
-import { OnePaceAPI } from "./src/api";
-
-async function example() {
-  const api = new OnePaceAPI();
-
-  // Cargar datos en español
-  await api.loadData("es");
-
-  // Obtener temporadas con doblaje
-  const dubSeasons = api.getSeasonsWithDub("es");
-  console.log(`Temporadas con doblaje: ${dubSeasons.length}`);
-
-  // Buscar Arabasta
-  const arabasta = api.searchSeasonsByTitle("arabasta", "es")[0];
-  if (arabasta) {
-    console.log(`${arabasta.title}: ${arabasta.description}`);
-
-    // Ver calidades disponibles
-    const qualities = api.getAvailableQualities(arabasta.id, "es");
-    console.log("Calidades:", qualities);
-  }
-}
-```
-
-## 🎥 Ejemplo de Episodio
-
-Un episodio típico incluye múltiples streams:
-
-```json
-{
-  "streams": [
-    {
-      "title": "1080p - Subtítulos Español",
-      "url": "https://pixeldrain.net/api/file/...",
-      "quality": "1080p",
-      "language": "es"
-    },
-    {
-      "title": "1080p - Doblaje Español",
-      "url": "https://pixeldrain.net/api/file/...",
-      "quality": "1080p",
-      "language": "es"
-    },
-    {
-      "title": "1080p - Subtítulos English",
-      "url": "https://pixeldrain.net/api/file/...",
-      "quality": "1080p",
-      "language": "en"
-    }
-  ]
-}
-```
-
 ## 🚀 Despliegue Automatizado
 
 ### 🌐 Producción Actual
@@ -422,23 +328,15 @@ El proyecto tiene configurado un pipeline completo:
 6. Despliega a Cloudflare Pages
 ```
 
-### �️ Configuración del Pipeline
-
-El workflow automático incluye:
-
-- ✅ **Cache de dependencias** para builds rápidos
-- 🔄 **Scraping automático** de datos actualizados  
-- 🏗️ **Generación del addon** completo
-- 🚀 **Despliegue a Cloudflare Pages**
-- 📊 **403+ archivos** de streams generados automáticamente
-
 ### 📱 Instalar el Addon en Stremio
 
 1. **Abre Stremio** en cualquier dispositivo
 2. **Ve a configuración** (⚙️) → "Addons"
-3. **Haz clic en** "Add addon" 
+3. **Haz clic en** "Add addon"
 4. **Pega esta URL**: `https://one-pace-latam-stremio.pages.dev/manifest.json`
 5. **¡Listo!** Ya puedes ver One Pace completo
+
+**Instalación directa**: `stremio://one-pace-latam-stremio.pages.dev/manifest.json`
 
 ### 🔧 URLs del Addon en Producción
 
@@ -446,40 +344,6 @@ El workflow automático incluye:
 - **Catálogo**: `https://one-pace-latam-stremio.pages.dev/catalog/series/one-pace-complete.json`
 - **Metadata**: `https://one-pace-latam-stremio.pages.dev/meta/series/onepace_complete_series.json`
 - **Stream ejemplo**: `https://one-pace-latam-stremio.pages.dev/stream/series/onepace_s01e01.json`
-
-### 💡 Ventajas del Sistema Actual
-
-- 🚀 **Cero configuración**: Todo automatizado end-to-end
-- 🔄 **Siempre actualizado**: Se actualiza automáticamente con cada push
-- 🌐 **CDN Global**: Cloudflare Pages con distribución mundial
-- 📱 **Universal**: Compatible con todos los dispositivos Stremio
-- 🔧 **Mantenimiento cero**: Sistema completamente autónomo
-- ⚡ **Ultra rápido**: Bun + TypeScript + optimizaciones inteligentes
-- 🛡️ **Confiable**: 403+ archivos generados y verificados automáticamente
-
-## 🎯 Beneficios del Sistema Unificado
-
-### Para el Usuario
-
-- ✅ **Más fácil de navegar**: Una sola serie vs 35+ series
-- ✅ **Mejor organización**: Temporadas lógicas por arcos
-- ✅ **Múltiples opciones**: Sub/Dub/Calidades en cada episodio
-- ✅ **Experiencia nativa**: Como ver cualquier serie en Stremio
-
-### Para el Desarrollador
-
-- ✅ **Código más limpio**: Un solo generador especializado
-- ✅ **Mantenimiento simplificado**: Una sola estructura unificada
-- ✅ **Sin legacy**: Sistema completamente modernizado
-- ✅ **Escalabilidad**: Fácil agregar nuevos arcos
-- ✅ **Multiidioma nativo**: Soporte built-in para múltiples idiomas
-
-## 🔄 Migración del Sistema Legacy
-
-- ✅ **Sistema unificado único**: Ya no se mantiene el sistema legacy
-- ✅ **Experiencia mejorada**: Una sola serie organizada por temporadas
-- ✅ **Datos existentes**: Usa los mismos archivos de datos del scraper
-- ✅ **Hosting flexible**: Funciona en cualquier servidor
 
 ## 🤝 Contribuir
 
@@ -492,6 +356,7 @@ El proyecto está completamente automatizado, pero siempre se aceptan contribuci
 - **Documentación**: Mejoras o traducciones
 - **Bug fixes**: Cualquier problema encontrado
 - **Features**: Nuevas características para el addon
+- **arcos.json**: Agregar o actualizar arcos faltantes
 
 ### 📋 Proceso
 
@@ -504,8 +369,8 @@ El proyecto está completamente automatizado, pero siempre se aceptan contribuci
 ### 🧪 Testing Local
 
 ```bash
-bun run demo      # Verificar que la API funciona
-bun run scraper   # Probar el scraper
+bun run demo              # Verificar que las APIs funcionan
+bun run scraper           # Probar el scraper
 bun run generate-unified  # Generar addon localmente
 ```
 
@@ -513,20 +378,11 @@ bun run generate-unified  # Generar addon localmente
 
 ### 📊 Métricas del Sistema
 
-- **Archivos generados**: 403+ streams individuales
-- **Tiempo de build**: ~30-45 segundos (CI/CD completo)
-- **Tamaño total**: ~2MB de archivos JSON optimizados
-- **Velocidad scraping**: Procesamiento paralelo de ambos idiomas
+- **Tiempo de build**: ~30-60 segundos (CI/CD completo)
 - **Cache inteligente**: Solo actualiza archivos cuando hay cambios reales
-
-### 🔧 Optimizaciones Implementadas
-
-- ✅ **Hashing MD5**: Evita regeneración innecesaria de archivos
-- ✅ **Procesamiento paralelo**: Scraping ES/EN simultáneo
-- ✅ **Cache de dependencias**: GitHub Actions optimizado
-- ✅ **TypeScript estricto**: Detección temprana de errores
-- ✅ **Pixeldrain API**: Integración eficiente para carpetas
-- ✅ **JSON minificado**: Archivos optimizados para producción
+- **Procesamiento paralelo**: Scraping ES/EN simultáneo
+- **Cache de dependencias**: GitHub Actions optimizado
+- **TypeScript estricto**: Detección temprana de errores
 
 ### 🌐 Distribución Global
 
@@ -534,47 +390,6 @@ bun run generate-unified  # Generar addon localmente
 - **Latencia**: <100ms desde cualquier ubicación
 - **Uptime**: 99.9% garantizado por Cloudflare
 - **Escalabilidad**: Automática sin límites de usuarios
-
-## 📝 Changelog
-
-### v2.2.0 - Sistema Automatizado Completo ✨
-
-- 🤖 **Despliegue automático** con GitHub Actions + Cloudflare Pages
-- 🔄 **Scraper inteligente** con detección de cambios MD5
-- 🌐 **Integración Pixeldrain API** para carpetas de videos
-- ✨ **403+ episodios** generados automáticamente
-- 📊 **38 temporadas** (inglés) / **34 temporadas** (español)
-- �‍☠️ **Una sola serie** unificada con temporadas por arcos
-- 🎬 **Múltiples formatos** por episodio (Sub/Dub ES/EN)
-- � **Pipeline CI/CD** completamente automatizado
-- � **Sistema de archivos optimizado** con versionado inteligente
-
-## � Estado del Proyecto
-
-### ✅ Completamente Funcional
-
-- 🚀 **Addon en producción**: Funcionando 24/7
-- 🔄 **Actualizaciones automáticas**: Sistema autónomo
-- 📱 **Compatible**: Todos los dispositivos Stremio
-- 🌍 **Multiidioma**: Español e inglés completamente integrados
-- 🎬 **403+ episodios**: Disponibles inmediatamente
-
-### 📈 Próximas Mejoras
-
-- 🔍 **Búsqueda mejorada**: Filtros adicionales en la API
-- 🎨 **Posters personalizados**: Imágenes para cada temporada  
-- 📊 **Dashboard web**: Interfaz web para estadísticas
-- 🌐 **Más idiomas**: Potencial expansión multiidioma
-
-## �🙏 Créditos y Reconocimientos
-
-- **One Pace Team**: Por el increíble trabajo de re-edición de One Piece
-- **Eiichiro Oda**: Creador original de One Piece
-- **Stremio**: Por la excelente plataforma de streaming
-- **Pixeldrain**: Por el hosting confiable de archivos
-- **Cloudflare**: Por la infraestructura global gratuita
-- **GitHub**: Por las Actions y hosting del código
-- **Bun Team**: Por el runtime ultrarrápido
 
 ## ⚖️ Licencia y Disclaimer
 
@@ -591,6 +406,11 @@ bun run generate-unified  # Generar addon localmente
 **El addon está listo para usar ahora mismo:**
 
 ```
+stremio://one-pace-latam-stremio.pages.dev/manifest.json
+```
+
+**O añade manualmente en Stremio:**
+```
 https://one-pace-latam-stremio.pages.dev/manifest.json
 ```
 
@@ -601,23 +421,3 @@ https://one-pace-latam-stremio.pages.dev/manifest.json
 - 📧 **Contacto**: Via GitHub o issues
 
 **¡Que disfrutes navegando por el Grand Line con One Pace! ⚓**
-
-## 🚀 Quick Start
-
-### Usuarios
-1. Abre Stremio.
-2. Ve a Configuración (⚙️) → Addons.
-3. Haz clic en "Add addon".
-4. Pega la URL: `https://one-pace-latam-stremio.pages.dev/manifest.json`.
-5. ¡Disfruta One Pace completo!
-
-### Desarrolladores
-```bash
-git clone https://github.com/CarmeloCampos/one-pace-stremio-latam.git
-cd one-pace-stremio-latam
-bun install
-
-bun run demo              # Ejecutar demo de estadísticas
-bun run scraper           # Extraer o actualizar datos
-bun run generate-unified  # Generar addon unificado
-```
