@@ -1,3 +1,4 @@
 name = "one-pace-latam-stremio"
 compatibility_date = "2025-10-21"
 pages_build_output_dir = "stremio-addon"
+tail_consumers = [{ service = "logger" }]
